@@ -1,0 +1,137 @@
+[{
+    "name": "agent_framework._agents.Agent.run",
+    "context": {
+        "trace_id": "fb8efd309c56652766b7e188018d3cc5",
+        "span_id": "5574c74c9666650a",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "5c298f31a853095f",
+    "start_time": "2026-06-19T14:33:43.070982Z",
+    "end_time": "2026-06-19T14:33:43.076955Z",
+    "status": {
+        "status_code": "ERROR",
+        "message": "'OpenAI' object has no attribute 'get_response'"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.4",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/agents/nimbus_travel_agent.py:54",
+        "workflow.name": "okahu_demos_ms_openai_travel_agent",
+        "entity.1.type": "agent.microsoft",
+        "entity.1.name": "TravelAgent",
+        "entity.1.description": "unknown_model",
+        "span.type": "agentic.invocation",
+        "scope.agentic.turn": "423d914a5aad32f48952cd9ebfba01eb",
+        "scope.agentic.invocation": "2fe4daf5dc127bac910c6769eac6466c",
+        "entity.count": 1,
+        "span.subtype": "content_processing"
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-06-19T14:33:43.071035Z",
+            "attributes": {
+                "input": "Plan a trip from New York to San Francisco, departing 2026-07-10 and returning 2026-07-14."
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-06-19T14:33:43.076936Z",
+            "attributes": {
+                "error_code": "error"
+            }
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_travel_agent"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "agent_framework._agents.Agent.run",
+    "context": {
+        "trace_id": "fb8efd309c56652766b7e188018d3cc5",
+        "span_id": "5c298f31a853095f",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "edb1f120203c22bc",
+    "start_time": "2026-06-19T14:33:43.070905Z",
+    "end_time": "2026-06-19T14:33:43.076999Z",
+    "status": {
+        "status_code": "ERROR",
+        "message": "'OpenAI' object has no attribute 'get_response'"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.4",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/agents/nimbus_travel_agent.py:54",
+        "workflow.name": "okahu_demos_ms_openai_travel_agent",
+        "entity.1.type": "agent.microsoft",
+        "span.type": "agentic.turn",
+        "scope.agentic.turn": "423d914a5aad32f48952cd9ebfba01eb",
+        "entity.count": 1,
+        "span.subtype": "turn"
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-06-19T14:33:43.070953Z",
+            "attributes": {
+                "input": "Plan a trip from New York to San Francisco, departing 2026-07-10 and returning 2026-07-14."
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-06-19T14:33:43.076987Z",
+            "attributes": {}
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_travel_agent"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "workflow",
+    "context": {
+        "trace_id": "fb8efd309c56652766b7e188018d3cc5",
+        "span_id": "edb1f120203c22bc",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-06-19T14:33:43.070825Z",
+    "end_time": "2026-06-19T14:33:43.077005Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.4",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/agents/nimbus_travel_agent.py:54",
+        "scope.agentic.turn": "423d914a5aad32f48952cd9ebfba01eb",
+        "workflow.name": "okahu_demos_ms_openai_travel_agent",
+        "span.type": "workflow",
+        "entity.1.name": "okahu_demos_ms_openai_travel_agent",
+        "entity.1.type": "workflow.generic",
+        "entity.2.type": "app_hosting.generic",
+        "entity.2.name": "generic"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_travel_agent"
+        },
+        "schema_url": ""
+    }
+}
+]

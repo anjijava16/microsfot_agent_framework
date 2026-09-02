@@ -1,0 +1,200 @@
+[{
+    "name": "openai.resources.responses.AsyncResponses.create",
+    "context": {
+        "trace_id": "6b5fcf4a3ecadc9bb3e5ee3c50cc4a18",
+        "span_id": "5bdd9ec3813572fd",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "ba5dfe4bf8672025",
+    "start_time": "2026-06-19T14:44:39.224842Z",
+    "end_time": "2026-06-19T14:44:39.841903Z",
+    "status": {
+        "status_code": "ERROR",
+        "message": "Error code: 404 - {'detail': 'The model `meta-llama/Meta-Llama-3.1-70B-Instruct` does not exist.'}"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.4",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/openai/_legacy_response.py:384",
+        "workflow.name": "okahu_demos_ms_openai_travel_agent",
+        "entity.1.type": "inference.openai",
+        "entity.1.provider_name": "api.tokenfactory.nebius.com",
+        "entity.1.inference_endpoint": "https://api.tokenfactory.nebius.com/v1/",
+        "entity.2.name": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+        "entity.2.type": "model.llm.meta-llama/Meta-Llama-3.1-70B-Instruct",
+        "span.type": "inference",
+        "scope.agentic.turn": "f6e32e1827eed5d9e078da5b9fcb7678",
+        "scope.agentic.invocation": "3140993fddd6ae66101735b0fe1ec43",
+        "entity.count": 2
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-06-19T14:44:39.224946Z",
+            "attributes": {
+                "input": [
+                    "{\"system\": [{\"type\": \"input_text\", \"text\": \"You are a helpful travel planning assistant. Use the available tools to find flights and hotels, then summarize the best options with a short itinerary.\"}]}",
+                    "{\"user\": [{\"type\": \"input_text\", \"text\": \"Plan a trip from New York to San Francisco, departing 2026-07-10 and returning 2026-07-14.\"}]}"
+                ]
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-06-19T14:44:39.841812Z",
+            "attributes": {
+                "error_code": "error",
+                "response": "Error code: 404 - {'detail': 'The model `meta-llama/Meta-Llama-3.1-70B-Instruct` does not exist.'}"
+            }
+        },
+        {
+            "name": "metadata",
+            "timestamp": "2026-06-19T14:44:39.841840Z",
+            "attributes": {}
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_travel_agent"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "agent_framework._agents.Agent.run",
+    "context": {
+        "trace_id": "6b5fcf4a3ecadc9bb3e5ee3c50cc4a18",
+        "span_id": "ba5dfe4bf8672025",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "67278aaa66f01177",
+    "start_time": "2026-06-19T14:44:39.217697Z",
+    "end_time": "2026-06-19T14:44:39.848540Z",
+    "status": {
+        "status_code": "ERROR",
+        "message": "(\"<class 'agent_framework_openai._chat_client.OpenAIChatClient'> service failed to complete the prompt: Error code: 404 - {'detail': 'The model `meta-llama/Meta-Llama-3.1-70B-Instruct` does not exist.'}\", NotFoundError(\"Error code: 404 - {'detail': 'The model `meta-llama/Meta-Llama-3.1-70B-Instruct` does not exist.'}\"))"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.4",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/agents/nimbus_travel_agent.py:65",
+        "workflow.name": "okahu_demos_ms_openai_travel_agent",
+        "entity.1.type": "agent.microsoft",
+        "entity.1.name": "TravelAgent",
+        "entity.1.description": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+        "span.type": "agentic.invocation",
+        "scope.agentic.turn": "f6e32e1827eed5d9e078da5b9fcb7678",
+        "scope.agentic.invocation": "3140993fddd6ae66101735b0fe1ec43",
+        "entity.count": 1,
+        "span.subtype": "content_processing"
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-06-19T14:44:39.217750Z",
+            "attributes": {
+                "input": "Plan a trip from New York to San Francisco, departing 2026-07-10 and returning 2026-07-14."
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-06-19T14:44:39.848514Z",
+            "attributes": {
+                "error_code": "error"
+            }
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_travel_agent"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "agent_framework._agents.Agent.run",
+    "context": {
+        "trace_id": "6b5fcf4a3ecadc9bb3e5ee3c50cc4a18",
+        "span_id": "67278aaa66f01177",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "dc86c665bf499e2e",
+    "start_time": "2026-06-19T14:44:39.217626Z",
+    "end_time": "2026-06-19T14:44:39.848591Z",
+    "status": {
+        "status_code": "ERROR",
+        "message": "(\"<class 'agent_framework_openai._chat_client.OpenAIChatClient'> service failed to complete the prompt: Error code: 404 - {'detail': 'The model `meta-llama/Meta-Llama-3.1-70B-Instruct` does not exist.'}\", NotFoundError(\"Error code: 404 - {'detail': 'The model `meta-llama/Meta-Llama-3.1-70B-Instruct` does not exist.'}\"))"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.4",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/agents/nimbus_travel_agent.py:65",
+        "workflow.name": "okahu_demos_ms_openai_travel_agent",
+        "entity.1.type": "agent.microsoft",
+        "span.type": "agentic.turn",
+        "scope.agentic.turn": "f6e32e1827eed5d9e078da5b9fcb7678",
+        "entity.count": 1,
+        "span.subtype": "turn"
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-06-19T14:44:39.217670Z",
+            "attributes": {
+                "input": "Plan a trip from New York to San Francisco, departing 2026-07-10 and returning 2026-07-14."
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-06-19T14:44:39.848578Z",
+            "attributes": {}
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_travel_agent"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "workflow",
+    "context": {
+        "trace_id": "6b5fcf4a3ecadc9bb3e5ee3c50cc4a18",
+        "span_id": "dc86c665bf499e2e",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-06-19T14:44:39.217551Z",
+    "end_time": "2026-06-19T14:44:39.848598Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.4",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/agents/nimbus_travel_agent.py:65",
+        "scope.agentic.turn": "f6e32e1827eed5d9e078da5b9fcb7678",
+        "workflow.name": "okahu_demos_ms_openai_travel_agent",
+        "span.type": "workflow",
+        "entity.1.name": "okahu_demos_ms_openai_travel_agent",
+        "entity.1.type": "workflow.generic",
+        "entity.2.type": "app_hosting.generic",
+        "entity.2.name": "generic"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_travel_agent"
+        },
+        "schema_url": ""
+    }
+}
+]

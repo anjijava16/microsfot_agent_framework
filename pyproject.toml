@@ -5,12 +5,16 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-	"agent-framework-azure-ai==1.0.0rc6",
+	"agent-framework-azure-ai",
+	"agent-framework-openai",
 	"agent-framework-core",
 	"agent-framework-orchestrations",
 	"opentelemetry-semantic-conventions",
 	"opentelemetry-semantic-conventions-ai",
 	"openai",
 	"python-dotenv",
-	"monocle-apptrace==0.8.4",
+	#"monocle-apptrace",
 ]
+
+[tool.uv.sources]
+monocle-apptrace = { path = "monocle_apptrace-0.8.7b1-py3-none-any.whl" }

@@ -1,0 +1,1018 @@
+[{
+    "name": "agent_framework_orchestrations._base_group_chat_orchestrator.BaseGroupChatOrchestrator.execute",
+    "context": {
+        "trace_id": "77144145ac617c888fa61ece1e669a7b",
+        "span_id": "dabe327ee15b53b9",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "d9887142f3b027b2",
+    "start_time": "2026-09-02T03:27:27.217781Z",
+    "end_time": "2026-09-02T03:27:27.218372Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.7b1",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/agent_framework/_workflows/_edge_runner.py:81",
+        "workflow.name": "okahu_demos_ms_openai_groupchat_travel",
+        "entity.1.type": "agent.microsoft",
+        "entity.1.name": "group_chat_orchestrator",
+        "entity.1.description": "group_chat",
+        "span.type": "agentic.invocation",
+        "scope.agentic.turn": "de63acb27ba4d06d10e7e4261acaad81",
+        "scope.agentic.invocation": "fa9a9caa816db652570ac991341a318d",
+        "entity.count": 1,
+        "span.subtype": "routing"
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-09-02T03:27:27.217832Z",
+            "attributes": {
+                "input": "Plan a 3-day budget weekend in Barcelona for two friends, total budget under $1,200 including flights from London."
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-09-02T03:27:27.218354Z",
+            "attributes": {}
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_groupchat_travel"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "agent_framework._workflows._agent_executor.AgentExecutor.execute",
+    "context": {
+        "trace_id": "77144145ac617c888fa61ece1e669a7b",
+        "span_id": "62a65bdb3d474c5e",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "d9887142f3b027b2",
+    "start_time": "2026-09-02T03:27:27.269575Z",
+    "end_time": "2026-09-02T03:27:27.269885Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.7b1",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/agent_framework/_workflows/_edge_runner.py:81",
+        "workflow.name": "okahu_demos_ms_openai_groupchat_travel",
+        "entity.1.type": "agent.microsoft",
+        "entity.1.name": "Planner",
+        "entity.1.description": "unknown_model",
+        "span.type": "agentic.invocation",
+        "scope.agentic.turn": "de63acb27ba4d06d10e7e4261acaad81",
+        "scope.agentic.invocation": "db8a56aac680cf989e094712f14b19d8",
+        "entity.count": 1,
+        "span.subtype": "content_processing"
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-09-02T03:27:27.269664Z",
+            "attributes": {
+                "input": "WorkflowMessage(data=AgentExecutorRequest(messages=[<agent_framework._types.Message object at 0x10a24c1a0>], should_respond=False), source_id='group_chat_orchestrator', target_id='Planner', type=<MessageType.STANDARD: 'standard'>, trace_contexts=[{'traceparent': '00-ff647920ebbd48312a0a3884513f4d98-d6586962cdae4f0f-03', 'baggage': 'monocle.scope.agentic.turn=0xde63acb27ba4d06d10e7e4261acaad81,monocle.scope.agentic.invocation=0xfa9a9caa816db652570ac991341a318d'}], source_span_ids=['d6586962cdae4f0f'], original_request_info_event=None)"
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-09-02T03:27:27.269860Z",
+            "attributes": {}
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_groupchat_travel"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "agent_framework._workflows._agent_executor.AgentExecutor.execute",
+    "context": {
+        "trace_id": "77144145ac617c888fa61ece1e669a7b",
+        "span_id": "a00c361f34aa8aa2",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "d9887142f3b027b2",
+    "start_time": "2026-09-02T03:27:27.285591Z",
+    "end_time": "2026-09-02T03:27:27.286716Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.7b1",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/agent_framework/_workflows/_edge_runner.py:81",
+        "workflow.name": "okahu_demos_ms_openai_groupchat_travel",
+        "entity.1.type": "agent.microsoft",
+        "entity.1.name": "BudgetHawk",
+        "entity.1.description": "unknown_model",
+        "entity.1.from_agent": "Planner",
+        "entity.1.from_agent_span_id": "62a65bdb3d474c5e",
+        "span.type": "agentic.invocation",
+        "scope.agentic.turn": "de63acb27ba4d06d10e7e4261acaad81",
+        "scope.agentic.invocation": "f441c47abbd2b974527d287111971413",
+        "entity.count": 1,
+        "span.subtype": "content_processing"
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-09-02T03:27:27.285882Z",
+            "attributes": {
+                "input": "WorkflowMessage(data=AgentExecutorRequest(messages=[<agent_framework._types.Message object at 0x10a24c1a0>], should_respond=False), source_id='group_chat_orchestrator', target_id='BudgetHawk', type=<MessageType.STANDARD: 'standard'>, trace_contexts=[{'traceparent': '00-ff647920ebbd48312a0a3884513f4d98-ee47b4f0c7ed069b-03', 'baggage': 'monocle.scope.agentic.turn=0xde63acb27ba4d06d10e7e4261acaad81,monocle.scope.agentic.invocation=0xfa9a9caa816db652570ac991341a318d'}], source_span_ids=['ee47b4f0c7ed069b'], original_request_info_event=None)"
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-09-02T03:27:27.286645Z",
+            "attributes": {}
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_groupchat_travel"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "agent_framework._workflows._agent_executor.AgentExecutor.execute",
+    "context": {
+        "trace_id": "77144145ac617c888fa61ece1e669a7b",
+        "span_id": "a37f3926b41b92e5",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "d9887142f3b027b2",
+    "start_time": "2026-09-02T03:27:27.287731Z",
+    "end_time": "2026-09-02T03:27:27.287998Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.7b1",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/agent_framework/_workflows/_edge_runner.py:81",
+        "workflow.name": "okahu_demos_ms_openai_groupchat_travel",
+        "entity.1.type": "agent.microsoft",
+        "entity.1.name": "Reviewer",
+        "entity.1.description": "unknown_model",
+        "entity.1.from_agent": "BudgetHawk",
+        "entity.1.from_agent_span_id": "a00c361f34aa8aa2",
+        "span.type": "agentic.invocation",
+        "scope.agentic.turn": "de63acb27ba4d06d10e7e4261acaad81",
+        "scope.agentic.invocation": "ef313e7c7730ede5bde1c7d443cfa59c",
+        "entity.count": 1,
+        "span.subtype": "content_processing"
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-09-02T03:27:27.287803Z",
+            "attributes": {
+                "input": "WorkflowMessage(data=AgentExecutorRequest(messages=[<agent_framework._types.Message object at 0x10a24c1a0>], should_respond=False), source_id='group_chat_orchestrator', target_id='Reviewer', type=<MessageType.STANDARD: 'standard'>, trace_contexts=[{'traceparent': '00-ff647920ebbd48312a0a3884513f4d98-d727590ed6ed87e2-03', 'baggage': 'monocle.scope.agentic.turn=0xde63acb27ba4d06d10e7e4261acaad81,monocle.scope.agentic.invocation=0xfa9a9caa816db652570ac991341a318d'}], source_span_ids=['d727590ed6ed87e2'], original_request_info_event=None)"
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-09-02T03:27:27.287982Z",
+            "attributes": {}
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_groupchat_travel"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "openai.resources.responses.responses.AsyncResponses.create",
+    "context": {
+        "trace_id": "77144145ac617c888fa61ece1e669a7b",
+        "span_id": "0aa96f7f63e0a519",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "a3804e625cccb67a",
+    "start_time": "2026-09-02T03:27:27.277472Z",
+    "end_time": "2026-09-02T03:27:32.513686Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.7b1",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/openai/_legacy_response.py:386",
+        "workflow.name": "okahu_demos_ms_openai_groupchat_travel",
+        "entity.1.type": "inference.openai",
+        "entity.1.provider_name": "api.openai.com",
+        "entity.1.inference_endpoint": "https://api.openai.com/v1/",
+        "entity.2.name": "gpt-4o-mini",
+        "entity.2.type": "model.llm.gpt-4o-mini",
+        "span.type": "inference",
+        "scope.agentic.turn": "de63acb27ba4d06d10e7e4261acaad81",
+        "scope.agentic.invocation": "9453a49feb898e03df2af5e3d83bc753",
+        "entity.count": 2,
+        "span.subtype": "turn_end"
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-09-02T03:27:27.277598Z",
+            "attributes": {
+                "input": [
+                    "{\"system\": \"You are the trip planner. Propose a concrete itinerary. When the budget hawk or reviewer gives feedback, revise the plan accordingly. Keep it tight.\"}",
+                    "{\"user\": [{\"type\": \"input_text\", \"text\": \"Plan a 3-day budget weekend in Barcelona for two friends, total budget under $1,200 including flights from London.\"}]}"
+                ]
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-09-02T03:27:32.513557Z",
+            "attributes": {
+                "response": "{\"assistant\": \"Here's a budget-friendly 3-day itinerary for two friends visiting Barcelona, keeping the total cost under $1,200, including flights from London.\\n\\n### Itinerary Overview\\n**Dates:** Friday to Sunday  \\n**Budget:** $1,200 for two people  \\n**Group Size:** 2 friends  \\n\\n### Day 1: Arrival and Exploring the Gothic Quarter\\n**Morning:**\\n- **Flight from London to Barcelona:** Approx. $150 per person (round trip $300)\\n- **Airport to City Center (Train):** $10 per person ($20 total)\\n\\n**Afternoon:**\\n- **Accommodation Check-in:** Budget hotel/hostel in the Gothic Quarter - ~$100/night (3 nights = $300 total)\\n- **Lunch:** Tapas at a local bar - $30 ($15 each)\\n- **Explore the Gothic Quarter:** Visit La Seu Cathedral and stroll through the narrow streets (Free).\\n\\n**Evening:**\\n- **Dinner:** Affordable restaurant for paella - $50 ($25 each).\\n- **Nightlife:** Enjoy a drink at a local bar - $20 ($10 each).\\n\\n**Day 1 Total:** $720\\n\\n---\\n\\n### Day 2: Modernist Architecture and Park G\\u00fcell\\n**Morning:**\\n- **Breakfast:** Pastries and coffee at a caf\\u00e9 - $20 ($10 each).\\n- **Visit Casa Batll\\u00f3:** Entrance fee - $40 ($20 each).\\n  \\n**Afternoon:**\\n- **Lunch:** Sandwiches/picnic from a local market - $20 ($10 each).\\n- **Visit Park G\\u00fcell:** Entrance fee - $20 ($10 each). Explore beautiful parks (additional free areas).\\n\\n**Evening:**\\n- **Dinner:** Casual tapas spot - $50 ($25 each).\\n- **Stroll along La Rambla:** Enjoy the atmosphere (Free).\\n\\n**Day 2 Total:** $840\\n\\n---\\n\\n### Day 3: Beach and Departure\\n**Morning:**\\n- **Breakfast:** Local caf\\u00e9 - $20 ($10 each).\\n- **Visit Barceloneta Beach:** Relax and swim (Free).\\n\\n**Afternoon:**\\n- **Lunch:** Beachside caf\\u00e9 - $30 ($15 each).\\n- **Last-minute shopping/souvenir hunting:** around $50.\\n\\n**Evening:**\\n- **Transfer to the airport:** $10 per person ($20 total).\\n  \\n**Departure Flight Back to London:** Included in initial flight cost.\\n\\n### Total Breakdown\\n- **Flights:** $300\\n- **Accommodation:** $300\\n- **Food:** $270\\n- **Attractions:** $100\\n- **Transportation:** $40\\n- **Miscellaneous:** $50\\n\\n### Grand Total: **$1,060**\\n\\n### Notes:\\n- Flight prices vary; consider booking early to secure the best rates.\\n- Look for special deals on meals or attractions online.\\n- Use local transport (metro) to save on transportation, if needed. \\n\\nLet me know if you have any feedback or suggestions for revisions!\"}"
+            }
+        },
+        {
+            "name": "metadata",
+            "timestamp": "2026-09-02T03:27:32.513651Z",
+            "attributes": {
+                "completion_tokens": 602,
+                "prompt_tokens": 67,
+                "total_tokens": 669,
+                "cache_read_input_tokens": 0,
+                "finish_reason": "stop",
+                "finish_type": "success"
+            }
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_groupchat_travel"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "agent_framework._workflows._agent_executor.AgentExecutor.execute",
+    "context": {
+        "trace_id": "77144145ac617c888fa61ece1e669a7b",
+        "span_id": "a3804e625cccb67a",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "d9887142f3b027b2",
+    "start_time": "2026-09-02T03:27:27.270239Z",
+    "end_time": "2026-09-02T03:27:32.514687Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.7b1",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/agent_framework/_workflows/_edge_runner.py:81",
+        "workflow.name": "okahu_demos_ms_openai_groupchat_travel",
+        "entity.1.type": "agent.microsoft",
+        "entity.1.name": "Planner",
+        "entity.1.description": "unknown_model",
+        "entity.1.from_agent": "Planner",
+        "entity.1.from_agent_span_id": "62a65bdb3d474c5e",
+        "last.inference": "0aa96f7f63e0a519:*",
+        "span.type": "agentic.invocation",
+        "scope.agentic.turn": "de63acb27ba4d06d10e7e4261acaad81",
+        "scope.agentic.invocation": "9453a49feb898e03df2af5e3d83bc753",
+        "entity.count": 1,
+        "span.subtype": "content_processing"
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-09-02T03:27:27.270288Z",
+            "attributes": {
+                "input": "WorkflowMessage(data=AgentExecutorRequest(messages=[], should_respond=True), source_id='group_chat_orchestrator', target_id='Planner', type=<MessageType.STANDARD: 'standard'>, trace_contexts=[{'traceparent': '00-ff647920ebbd48312a0a3884513f4d98-d0a8dc8e843a785c-03', 'baggage': 'monocle.scope.agentic.turn=0xde63acb27ba4d06d10e7e4261acaad81,monocle.scope.agentic.invocation=0xfa9a9caa816db652570ac991341a318d'}], source_span_ids=['d0a8dc8e843a785c'], original_request_info_event=None)"
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-09-02T03:27:32.514667Z",
+            "attributes": {}
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_groupchat_travel"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "agent_framework_orchestrations._base_group_chat_orchestrator.BaseGroupChatOrchestrator.execute",
+    "context": {
+        "trace_id": "77144145ac617c888fa61ece1e669a7b",
+        "span_id": "39e337bd0971faf6",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "d9887142f3b027b2",
+    "start_time": "2026-09-02T03:27:32.566569Z",
+    "end_time": "2026-09-02T03:27:32.567252Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.7b1",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/agent_framework/_workflows/_edge_runner.py:81",
+        "workflow.name": "okahu_demos_ms_openai_groupchat_travel",
+        "entity.1.type": "agent.microsoft",
+        "entity.1.name": "group_chat_orchestrator",
+        "entity.1.description": "group_chat",
+        "entity.1.from_agent": "Planner",
+        "entity.1.from_agent_span_id": "a3804e625cccb67a",
+        "span.type": "agentic.invocation",
+        "scope.agentic.turn": "de63acb27ba4d06d10e7e4261acaad81",
+        "scope.agentic.invocation": "ec4aa53904dbfd936e5ce280eff4daac",
+        "entity.count": 1,
+        "span.subtype": "routing",
+        "inference.decision.span.id": "0aa96f7f63e0a519"
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-09-02T03:27:32.566650Z",
+            "attributes": {}
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-09-02T03:27:32.567228Z",
+            "attributes": {}
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_groupchat_travel"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "agent_framework._workflows._agent_executor.AgentExecutor.execute",
+    "context": {
+        "trace_id": "77144145ac617c888fa61ece1e669a7b",
+        "span_id": "7704de8a89e36945",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "d9887142f3b027b2",
+    "start_time": "2026-09-02T03:27:32.619061Z",
+    "end_time": "2026-09-02T03:27:32.619347Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.7b1",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/agent_framework/_workflows/_edge_runner.py:81",
+        "workflow.name": "okahu_demos_ms_openai_groupchat_travel",
+        "entity.1.type": "agent.microsoft",
+        "entity.1.name": "BudgetHawk",
+        "entity.1.description": "unknown_model",
+        "entity.1.from_agent": "Planner",
+        "entity.1.from_agent_span_id": "a3804e625cccb67a",
+        "span.type": "agentic.invocation",
+        "scope.agentic.turn": "de63acb27ba4d06d10e7e4261acaad81",
+        "scope.agentic.invocation": "c1337036a94fb53acb1aa4df9e9f916d",
+        "entity.count": 1,
+        "span.subtype": "content_processing"
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-09-02T03:27:32.619145Z",
+            "attributes": {
+                "input": "WorkflowMessage(data=AgentExecutorRequest(messages=[<agent_framework._types.Message object at 0x10a18f250>], should_respond=False), source_id='group_chat_orchestrator', target_id='BudgetHawk', type=<MessageType.STANDARD: 'standard'>, trace_contexts=[{'traceparent': '00-ff647920ebbd48312a0a3884513f4d98-2c7042bfccc36a16-03', 'baggage': 'monocle.scope.agentic.turn=0xde63acb27ba4d06d10e7e4261acaad81,monocle.scope.agentic.invocation=0xec4aa53904dbfd936e5ce280eff4daac'}], source_span_ids=['2c7042bfccc36a16'], original_request_info_event=None)"
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-09-02T03:27:32.619318Z",
+            "attributes": {}
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_groupchat_travel"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "agent_framework._workflows._agent_executor.AgentExecutor.execute",
+    "context": {
+        "trace_id": "77144145ac617c888fa61ece1e669a7b",
+        "span_id": "cd10b5f54685f84a",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "d9887142f3b027b2",
+    "start_time": "2026-09-02T03:27:32.621973Z",
+    "end_time": "2026-09-02T03:27:32.622193Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.7b1",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/agent_framework/_workflows/_edge_runner.py:81",
+        "workflow.name": "okahu_demos_ms_openai_groupchat_travel",
+        "entity.1.type": "agent.microsoft",
+        "entity.1.name": "Reviewer",
+        "entity.1.description": "unknown_model",
+        "entity.1.from_agent": "BudgetHawk",
+        "entity.1.from_agent_span_id": "7704de8a89e36945",
+        "span.type": "agentic.invocation",
+        "scope.agentic.turn": "de63acb27ba4d06d10e7e4261acaad81",
+        "scope.agentic.invocation": "cfdcb078ee9110c6d2e6485bc723377c",
+        "entity.count": 1,
+        "span.subtype": "content_processing"
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-09-02T03:27:32.622032Z",
+            "attributes": {
+                "input": "WorkflowMessage(data=AgentExecutorRequest(messages=[<agent_framework._types.Message object at 0x10a18f250>], should_respond=False), source_id='group_chat_orchestrator', target_id='Reviewer', type=<MessageType.STANDARD: 'standard'>, trace_contexts=[{'traceparent': '00-ff647920ebbd48312a0a3884513f4d98-eb6daf0a09414387-03', 'baggage': 'monocle.scope.agentic.turn=0xde63acb27ba4d06d10e7e4261acaad81,monocle.scope.agentic.invocation=0xec4aa53904dbfd936e5ce280eff4daac'}], source_span_ids=['eb6daf0a09414387'], original_request_info_event=None)"
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-09-02T03:27:32.622175Z",
+            "attributes": {}
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_groupchat_travel"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "openai.resources.responses.responses.AsyncResponses.create",
+    "context": {
+        "trace_id": "77144145ac617c888fa61ece1e669a7b",
+        "span_id": "40960f55522f9e47",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "fb23a3313f222ba3",
+    "start_time": "2026-09-02T03:27:32.620690Z",
+    "end_time": "2026-09-02T03:27:37.404826Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.7b1",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/openai/_legacy_response.py:386",
+        "workflow.name": "okahu_demos_ms_openai_groupchat_travel",
+        "entity.1.type": "inference.openai",
+        "entity.1.provider_name": "api.openai.com",
+        "entity.1.inference_endpoint": "https://api.openai.com/v1/",
+        "entity.2.name": "gpt-4o-mini",
+        "entity.2.type": "model.llm.gpt-4o-mini",
+        "span.type": "inference",
+        "scope.agentic.turn": "de63acb27ba4d06d10e7e4261acaad81",
+        "scope.agentic.invocation": "161ba4fe47afddc7e0666179c23c35c8",
+        "entity.count": 2,
+        "span.subtype": "turn_end"
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-09-02T03:27:32.620800Z",
+            "attributes": {
+                "input": [
+                    "{\"system\": \"You are a cost-conscious critic. Scrutinize the planner's itinerary for overspending and demand specific cheaper alternatives. Be direct and brief.\"}",
+                    "{\"user\": [{\"type\": \"input_text\", \"text\": \"Plan a 3-day budget weekend in Barcelona for two friends, total budget under $1,200 including flights from London.\"}]}",
+                    "{\"assistant\": [{\"type\": \"output_text\", \"text\": \"Here's a budget-friendly 3-day itinerary for two friends visiting Barcelona, keeping the total cost under $1,200, including flights from London.\\n\\n### Itinerary Overview\\n**Dates:** Friday to Sunday  \\n**Budget:** $1,200 for two people  \\n**Group Size:** 2 friends  \\n\\n### Day 1: Arrival and Exploring the Gothic Quarter\\n**Morning:**\\n- **Flight from London to Barcelona:** Approx. $150 per person (round trip $300)\\n- **Airport to City Center (Train):** $10 per person ($20 total)\\n\\n**Afternoon:**\\n- **Accommodation Check-in:** Budget hotel/hostel in the Gothic Quarter - ~$100/night (3 nights = $300 total)\\n- **Lunch:** Tapas at a local bar - $30 ($15 each)\\n- **Explore the Gothic Quarter:** Visit La Seu Cathedral and stroll through the narrow streets (Free).\\n\\n**Evening:**\\n- **Dinner:** Affordable restaurant for paella - $50 ($25 each).\\n- **Nightlife:** Enjoy a drink at a local bar - $20 ($10 each).\\n\\n**Day 1 Total:** $720\\n\\n---\\n\\n### Day 2: Modernist Architecture and Park G\\u00fcell\\n**Morning:**\\n- **Breakfast:** Pastries and coffee at a caf\\u00e9 - $20 ($10 each).\\n- **Visit Casa Batll\\u00f3:** Entrance fee - $40 ($20 each).\\n  \\n**Afternoon:**\\n- **Lunch:** Sandwiches/picnic from a local market - $20 ($10 each).\\n- **Visit Park G\\u00fcell:** Entrance fee - $20 ($10 each). Explore beautiful parks (additional free areas).\\n\\n**Evening:**\\n- **Dinner:** Casual tapas spot - $50 ($25 each).\\n- **Stroll along La Rambla:** Enjoy the atmosphere (Free).\\n\\n**Day 2 Total:** $840\\n\\n---\\n\\n### Day 3: Beach and Departure\\n**Morning:**\\n- **Breakfast:** Local caf\\u00e9 - $20 ($10 each).\\n- **Visit Barceloneta Beach:** Relax and swim (Free).\\n\\n**Afternoon:**\\n- **Lunch:** Beachside caf\\u00e9 - $30 ($15 each).\\n- **Last-minute shopping/souvenir hunting:** around $50.\\n\\n**Evening:**\\n- **Transfer to the airport:** $10 per person ($20 total).\\n  \\n**Departure Flight Back to London:** Included in initial flight cost.\\n\\n### Total Breakdown\\n- **Flights:** $300\\n- **Accommodation:** $300\\n- **Food:** $270\\n- **Attractions:** $100\\n- **Transportation:** $40\\n- **Miscellaneous:** $50\\n\\n### Grand Total: **$1,060**\\n\\n### Notes:\\n- Flight prices vary; consider booking early to secure the best rates.\\n- Look for special deals on meals or attractions online.\\n- Use local transport (metro) to save on transportation, if needed. \\n\\nLet me know if you have any feedback or suggestions for revisions!\", \"annotations\": []}]}"
+                ]
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-09-02T03:27:37.404734Z",
+            "attributes": {
+                "response": "{\"assistant\": \"Here's a budget-friendly 3-day itinerary for two friends visiting Barcelona, keeping the total cost under $1,200, including flights from London.\\n\\n### Itinerary Overview\\n**Dates:** Friday to Sunday  \\n**Budget:** $1,200 for two people  \\n**Group Size:** 2 friends  \\n\\n### Day 1: Arrival and Exploring the Gothic Quarter\\n**Morning:**\\n- **Flight from London to Barcelona:** Approx. $150 per person (round trip $300)\\n- **Airport to City Center (Train):** $10 per person ($20 total)\\n\\n**Afternoon:**\\n- **Accommodation Check-in:** Budget hotel/hostel in the Gothic Quarter - ~$100/night (3 nights = $300 total)\\n- **Lunch:** Tapas at a local bar - $30 ($15 each)\\n- **Explore the Gothic Quarter:** Visit La Seu Cathedral and stroll through the narrow streets (Free).\\n\\n**Evening:**\\n- **Dinner:** Affordable restaurant for paella - $50 ($25 each).\\n- **Nightlife:** Enjoy a drink at a local bar - $20 ($10 each).\\n\\n**Day 1 Total:** $720\\n\\n---\\n\\n### Day 2: Modernist Architecture and Park G\\u00fcell\\n**Morning:**\\n- **Breakfast:** Pastries and coffee at a caf\\u00e9 - $20 ($10 each).\\n- **Visit Casa Batll\\u00f3:** Entrance fee - $40 ($20 each).\\n  \\n**Afternoon:**\\n- **Lunch:** Sandwiches/picnic from a local market - $20 ($10 each).\\n- **Visit Park G\\u00fcell:** Entrance fee - $20 ($10 each). Explore beautiful parks (additional free areas).\\n\\n**Evening:**\\n- **Dinner:** Casual tapas spot - $50 ($25 each).\\n- **Stroll along La Rambla:** Enjoy the atmosphere (Free).\\n\\n**Day 2 Total:** $840\\n\\n---\\n\\n### Day 3: Beach and Departure\\n**Morning:**\\n- **Breakfast:** Local caf\\u00e9 - $20 ($10 each).\\n- **Visit Barceloneta Beach:** Relax and swim (Free).\\n\\n**Afternoon:**\\n- **Lunch:** Beachside caf\\u00e9 - $30 ($15 each).\\n- **Last-minute shopping/souvenir hunting:** around $50.\\n\\n**Evening:**\\n- **Transfer to the airport:** $10 per person ($20 total).\\n  \\n**Departure Flight Back to London:** Included in initial flight cost.\\n\\n### Total Breakdown\\n- **Flights:** $300\\n- **Accommodation:** $300\\n- **Food:** $270\\n- **Attractions:** $100\\n- **Transportation:** $40\\n- **Miscellaneous:** $50\\n\\n### Grand Total: **$1,060**\\n\\n### Notes:\\n- Flight prices vary; consider booking early to secure the best rates.\\n- Look for special deals on meals or attractions online.\\n- Use local transport (metro) to save on transportation, if needed. \\n\\nLet me know if you have any feedback or suggestions for revisions!\"}"
+            }
+        },
+        {
+            "name": "metadata",
+            "timestamp": "2026-09-02T03:27:37.404803Z",
+            "attributes": {
+                "completion_tokens": 602,
+                "prompt_tokens": 669,
+                "total_tokens": 1271,
+                "cache_read_input_tokens": 0,
+                "finish_reason": "stop",
+                "finish_type": "success"
+            }
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_groupchat_travel"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "agent_framework._workflows._agent_executor.AgentExecutor.execute",
+    "context": {
+        "trace_id": "77144145ac617c888fa61ece1e669a7b",
+        "span_id": "fb23a3313f222ba3",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "d9887142f3b027b2",
+    "start_time": "2026-09-02T03:27:32.619659Z",
+    "end_time": "2026-09-02T03:27:37.405844Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.7b1",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/agent_framework/_workflows/_edge_runner.py:81",
+        "workflow.name": "okahu_demos_ms_openai_groupchat_travel",
+        "entity.1.type": "agent.microsoft",
+        "entity.1.name": "BudgetHawk",
+        "entity.1.description": "unknown_model",
+        "entity.1.from_agent": "BudgetHawk",
+        "entity.1.from_agent_span_id": "7704de8a89e36945",
+        "last.inference": "40960f55522f9e47:*",
+        "span.type": "agentic.invocation",
+        "scope.agentic.turn": "de63acb27ba4d06d10e7e4261acaad81",
+        "scope.agentic.invocation": "161ba4fe47afddc7e0666179c23c35c8",
+        "entity.count": 1,
+        "span.subtype": "content_processing"
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-09-02T03:27:32.619710Z",
+            "attributes": {
+                "input": "WorkflowMessage(data=AgentExecutorRequest(messages=[], should_respond=True), source_id='group_chat_orchestrator', target_id='BudgetHawk', type=<MessageType.STANDARD: 'standard'>, trace_contexts=[{'traceparent': '00-ff647920ebbd48312a0a3884513f4d98-bc29a012523246b8-03', 'baggage': 'monocle.scope.agentic.turn=0xde63acb27ba4d06d10e7e4261acaad81,monocle.scope.agentic.invocation=0xec4aa53904dbfd936e5ce280eff4daac'}], source_span_ids=['bc29a012523246b8'], original_request_info_event=None)"
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-09-02T03:27:37.405824Z",
+            "attributes": {}
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_groupchat_travel"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "agent_framework_orchestrations._base_group_chat_orchestrator.BaseGroupChatOrchestrator.execute",
+    "context": {
+        "trace_id": "77144145ac617c888fa61ece1e669a7b",
+        "span_id": "7d9b014a129f2ab2",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "d9887142f3b027b2",
+    "start_time": "2026-09-02T03:27:37.457666Z",
+    "end_time": "2026-09-02T03:27:37.458382Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.7b1",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/agent_framework/_workflows/_edge_runner.py:81",
+        "workflow.name": "okahu_demos_ms_openai_groupchat_travel",
+        "entity.1.type": "agent.microsoft",
+        "entity.1.name": "group_chat_orchestrator",
+        "entity.1.description": "group_chat",
+        "entity.1.from_agent": "BudgetHawk",
+        "entity.1.from_agent_span_id": "fb23a3313f222ba3",
+        "span.type": "agentic.invocation",
+        "scope.agentic.turn": "de63acb27ba4d06d10e7e4261acaad81",
+        "scope.agentic.invocation": "4d36686d086c2fa998f42d70f92d9b9",
+        "entity.count": 1,
+        "span.subtype": "routing"
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-09-02T03:27:37.457729Z",
+            "attributes": {}
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-09-02T03:27:37.458363Z",
+            "attributes": {}
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_groupchat_travel"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "agent_framework._workflows._agent_executor.AgentExecutor.execute",
+    "context": {
+        "trace_id": "77144145ac617c888fa61ece1e669a7b",
+        "span_id": "ef04fcf1206a521c",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "d9887142f3b027b2",
+    "start_time": "2026-09-02T03:27:37.510006Z",
+    "end_time": "2026-09-02T03:27:37.510254Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.7b1",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/agent_framework/_workflows/_edge_runner.py:81",
+        "workflow.name": "okahu_demos_ms_openai_groupchat_travel",
+        "entity.1.type": "agent.microsoft",
+        "entity.1.name": "Planner",
+        "entity.1.description": "unknown_model",
+        "entity.1.from_agent": "BudgetHawk",
+        "entity.1.from_agent_span_id": "fb23a3313f222ba3",
+        "span.type": "agentic.invocation",
+        "scope.agentic.turn": "de63acb27ba4d06d10e7e4261acaad81",
+        "scope.agentic.invocation": "c6cc40ae91c29abb3e8d97427166cc3b",
+        "entity.count": 1,
+        "span.subtype": "content_processing"
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-09-02T03:27:37.510080Z",
+            "attributes": {
+                "input": "WorkflowMessage(data=AgentExecutorRequest(messages=[<agent_framework._types.Message object at 0x107837110>], should_respond=False), source_id='group_chat_orchestrator', target_id='Planner', type=<MessageType.STANDARD: 'standard'>, trace_contexts=[{'traceparent': '00-ff647920ebbd48312a0a3884513f4d98-96c23d564d585b09-03', 'baggage': 'monocle.scope.agentic.turn=0xde63acb27ba4d06d10e7e4261acaad81,monocle.scope.agentic.invocation=0x4d36686d086c2fa998f42d70f92d9b9'}], source_span_ids=['96c23d564d585b09'], original_request_info_event=None)"
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-09-02T03:27:37.510233Z",
+            "attributes": {}
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_groupchat_travel"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "agent_framework._workflows._agent_executor.AgentExecutor.execute",
+    "context": {
+        "trace_id": "77144145ac617c888fa61ece1e669a7b",
+        "span_id": "18d6739ed7f253d8",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "d9887142f3b027b2",
+    "start_time": "2026-09-02T03:27:37.510701Z",
+    "end_time": "2026-09-02T03:27:37.510897Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.7b1",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/agent_framework/_workflows/_edge_runner.py:81",
+        "workflow.name": "okahu_demos_ms_openai_groupchat_travel",
+        "entity.1.type": "agent.microsoft",
+        "entity.1.name": "Reviewer",
+        "entity.1.description": "unknown_model",
+        "entity.1.from_agent": "Planner",
+        "entity.1.from_agent_span_id": "ef04fcf1206a521c",
+        "span.type": "agentic.invocation",
+        "scope.agentic.turn": "de63acb27ba4d06d10e7e4261acaad81",
+        "scope.agentic.invocation": "748e81b2d7da22983ec8abffc5ae830c",
+        "entity.count": 1,
+        "span.subtype": "content_processing"
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-09-02T03:27:37.510747Z",
+            "attributes": {
+                "input": "WorkflowMessage(data=AgentExecutorRequest(messages=[<agent_framework._types.Message object at 0x107837110>], should_respond=False), source_id='group_chat_orchestrator', target_id='Reviewer', type=<MessageType.STANDARD: 'standard'>, trace_contexts=[{'traceparent': '00-ff647920ebbd48312a0a3884513f4d98-f9a8da45e75aa4c0-03', 'baggage': 'monocle.scope.agentic.turn=0xde63acb27ba4d06d10e7e4261acaad81,monocle.scope.agentic.invocation=0x4d36686d086c2fa998f42d70f92d9b9'}], source_span_ids=['f9a8da45e75aa4c0'], original_request_info_event=None)"
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-09-02T03:27:37.510882Z",
+            "attributes": {}
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_groupchat_travel"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "openai.resources.responses.responses.AsyncResponses.create",
+    "context": {
+        "trace_id": "77144145ac617c888fa61ece1e669a7b",
+        "span_id": "eab4d7c497fa5721",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "bd071430c782898d",
+    "start_time": "2026-09-02T03:27:37.512250Z",
+    "end_time": "2026-09-02T03:27:38.420977Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.7b1",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/openai/_legacy_response.py:386",
+        "workflow.name": "okahu_demos_ms_openai_groupchat_travel",
+        "entity.1.type": "inference.openai",
+        "entity.1.provider_name": "api.openai.com",
+        "entity.1.inference_endpoint": "https://api.openai.com/v1/",
+        "entity.2.name": "gpt-4o-mini",
+        "entity.2.type": "model.llm.gpt-4o-mini",
+        "span.type": "inference",
+        "scope.agentic.turn": "de63acb27ba4d06d10e7e4261acaad81",
+        "scope.agentic.invocation": "b61fcb7cea063c22b70648a999e3c5ed",
+        "entity.count": 2,
+        "span.subtype": "turn_end"
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-09-02T03:27:37.512345Z",
+            "attributes": {
+                "input": [
+                    "{\"system\": \"You are the senior reviewer. If the itinerary is realistic, well-priced and complete, reply starting with the single word 'APPROVED' followed by a one-line summary. Otherwise, give one round of specific fixes.\"}",
+                    "{\"user\": [{\"type\": \"input_text\", \"text\": \"Plan a 3-day budget weekend in Barcelona for two friends, total budget under $1,200 including flights from London.\"}]}",
+                    "{\"assistant\": [{\"type\": \"output_text\", \"text\": \"Here's a budget-friendly 3-day itinerary for two friends visiting Barcelona, keeping the total cost under $1,200, including flights from London.\\n\\n### Itinerary Overview\\n**Dates:** Friday to Sunday  \\n**Budget:** $1,200 for two people  \\n**Group Size:** 2 friends  \\n\\n### Day 1: Arrival and Exploring the Gothic Quarter\\n**Morning:**\\n- **Flight from London to Barcelona:** Approx. $150 per person (round trip $300)\\n- **Airport to City Center (Train):** $10 per person ($20 total)\\n\\n**Afternoon:**\\n- **Accommodation Check-in:** Budget hotel/hostel in the Gothic Quarter - ~$100/night (3 nights = $300 total)\\n- **Lunch:** Tapas at a local bar - $30 ($15 each)\\n- **Explore the Gothic Quarter:** Visit La Seu Cathedral and stroll through the narrow streets (Free).\\n\\n**Evening:**\\n- **Dinner:** Affordable restaurant for paella - $50 ($25 each).\\n- **Nightlife:** Enjoy a drink at a local bar - $20 ($10 each).\\n\\n**Day 1 Total:** $720\\n\\n---\\n\\n### Day 2: Modernist Architecture and Park G\\u00fcell\\n**Morning:**\\n- **Breakfast:** Pastries and coffee at a caf\\u00e9 - $20 ($10 each).\\n- **Visit Casa Batll\\u00f3:** Entrance fee - $40 ($20 each).\\n  \\n**Afternoon:**\\n- **Lunch:** Sandwiches/picnic from a local market - $20 ($10 each).\\n- **Visit Park G\\u00fcell:** Entrance fee - $20 ($10 each). Explore beautiful parks (additional free areas).\\n\\n**Evening:**\\n- **Dinner:** Casual tapas spot - $50 ($25 each).\\n- **Stroll along La Rambla:** Enjoy the atmosphere (Free).\\n\\n**Day 2 Total:** $840\\n\\n---\\n\\n### Day 3: Beach and Departure\\n**Morning:**\\n- **Breakfast:** Local caf\\u00e9 - $20 ($10 each).\\n- **Visit Barceloneta Beach:** Relax and swim (Free).\\n\\n**Afternoon:**\\n- **Lunch:** Beachside caf\\u00e9 - $30 ($15 each).\\n- **Last-minute shopping/souvenir hunting:** around $50.\\n\\n**Evening:**\\n- **Transfer to the airport:** $10 per person ($20 total).\\n  \\n**Departure Flight Back to London:** Included in initial flight cost.\\n\\n### Total Breakdown\\n- **Flights:** $300\\n- **Accommodation:** $300\\n- **Food:** $270\\n- **Attractions:** $100\\n- **Transportation:** $40\\n- **Miscellaneous:** $50\\n\\n### Grand Total: **$1,060**\\n\\n### Notes:\\n- Flight prices vary; consider booking early to secure the best rates.\\n- Look for special deals on meals or attractions online.\\n- Use local transport (metro) to save on transportation, if needed. \\n\\nLet me know if you have any feedback or suggestions for revisions!\", \"annotations\": []}]}",
+                    "{\"assistant\": [{\"type\": \"output_text\", \"text\": \"Here's a budget-friendly 3-day itinerary for two friends visiting Barcelona, keeping the total cost under $1,200, including flights from London.\\n\\n### Itinerary Overview\\n**Dates:** Friday to Sunday  \\n**Budget:** $1,200 for two people  \\n**Group Size:** 2 friends  \\n\\n### Day 1: Arrival and Exploring the Gothic Quarter\\n**Morning:**\\n- **Flight from London to Barcelona:** Approx. $150 per person (round trip $300)\\n- **Airport to City Center (Train):** $10 per person ($20 total)\\n\\n**Afternoon:**\\n- **Accommodation Check-in:** Budget hotel/hostel in the Gothic Quarter - ~$100/night (3 nights = $300 total)\\n- **Lunch:** Tapas at a local bar - $30 ($15 each)\\n- **Explore the Gothic Quarter:** Visit La Seu Cathedral and stroll through the narrow streets (Free).\\n\\n**Evening:**\\n- **Dinner:** Affordable restaurant for paella - $50 ($25 each).\\n- **Nightlife:** Enjoy a drink at a local bar - $20 ($10 each).\\n\\n**Day 1 Total:** $720\\n\\n---\\n\\n### Day 2: Modernist Architecture and Park G\\u00fcell\\n**Morning:**\\n- **Breakfast:** Pastries and coffee at a caf\\u00e9 - $20 ($10 each).\\n- **Visit Casa Batll\\u00f3:** Entrance fee - $40 ($20 each).\\n  \\n**Afternoon:**\\n- **Lunch:** Sandwiches/picnic from a local market - $20 ($10 each).\\n- **Visit Park G\\u00fcell:** Entrance fee - $20 ($10 each). Explore beautiful parks (additional free areas).\\n\\n**Evening:**\\n- **Dinner:** Casual tapas spot - $50 ($25 each).\\n- **Stroll along La Rambla:** Enjoy the atmosphere (Free).\\n\\n**Day 2 Total:** $840\\n\\n---\\n\\n### Day 3: Beach and Departure\\n**Morning:**\\n- **Breakfast:** Local caf\\u00e9 - $20 ($10 each).\\n- **Visit Barceloneta Beach:** Relax and swim (Free).\\n\\n**Afternoon:**\\n- **Lunch:** Beachside caf\\u00e9 - $30 ($15 each).\\n- **Last-minute shopping/souvenir hunting:** around $50.\\n\\n**Evening:**\\n- **Transfer to the airport:** $10 per person ($20 total).\\n  \\n**Departure Flight Back to London:** Included in initial flight cost.\\n\\n### Total Breakdown\\n- **Flights:** $300\\n- **Accommodation:** $300\\n- **Food:** $270\\n- **Attractions:** $100\\n- **Transportation:** $40\\n- **Miscellaneous:** $50\\n\\n### Grand Total: **$1,060**\\n\\n### Notes:\\n- Flight prices vary; consider booking early to secure the best rates.\\n- Look for special deals on meals or attractions online.\\n- Use local transport (metro) to save on transportation, if needed. \\n\\nLet me know if you have any feedback or suggestions for revisions!\", \"annotations\": []}]}"
+                ]
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-09-02T03:27:38.420903Z",
+            "attributes": {
+                "response": "{\"assistant\": \"APPROVED. The itinerary is well-structured, budget-friendly, and covers essential activities in Barcelona. Enjoy your trip!\"}"
+            }
+        },
+        {
+            "name": "metadata",
+            "timestamp": "2026-09-02T03:27:38.420952Z",
+            "attributes": {
+                "completion_tokens": 26,
+                "prompt_tokens": 1290,
+                "total_tokens": 1316,
+                "cache_read_input_tokens": 0,
+                "finish_reason": "stop",
+                "finish_type": "success"
+            }
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_groupchat_travel"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "agent_framework._workflows._agent_executor.AgentExecutor.execute",
+    "context": {
+        "trace_id": "77144145ac617c888fa61ece1e669a7b",
+        "span_id": "bd071430c782898d",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "d9887142f3b027b2",
+    "start_time": "2026-09-02T03:27:37.511319Z",
+    "end_time": "2026-09-02T03:27:38.422044Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.7b1",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/agent_framework/_workflows/_edge_runner.py:81",
+        "workflow.name": "okahu_demos_ms_openai_groupchat_travel",
+        "entity.1.type": "agent.microsoft",
+        "entity.1.name": "Reviewer",
+        "entity.1.description": "unknown_model",
+        "entity.1.from_agent": "Reviewer",
+        "entity.1.from_agent_span_id": "18d6739ed7f253d8",
+        "last.inference": "eab4d7c497fa5721:*",
+        "span.type": "agentic.invocation",
+        "scope.agentic.turn": "de63acb27ba4d06d10e7e4261acaad81",
+        "scope.agentic.invocation": "b61fcb7cea063c22b70648a999e3c5ed",
+        "entity.count": 1,
+        "span.subtype": "content_processing"
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-09-02T03:27:37.511394Z",
+            "attributes": {
+                "input": "WorkflowMessage(data=AgentExecutorRequest(messages=[], should_respond=True), source_id='group_chat_orchestrator', target_id='Reviewer', type=<MessageType.STANDARD: 'standard'>, trace_contexts=[{'traceparent': '00-ff647920ebbd48312a0a3884513f4d98-e1f8f999aeb11cda-03', 'baggage': 'monocle.scope.agentic.turn=0xde63acb27ba4d06d10e7e4261acaad81,monocle.scope.agentic.invocation=0x4d36686d086c2fa998f42d70f92d9b9'}], source_span_ids=['e1f8f999aeb11cda'], original_request_info_event=None)"
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-09-02T03:27:38.422027Z",
+            "attributes": {}
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_groupchat_travel"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "agent_framework_orchestrations._base_group_chat_orchestrator.BaseGroupChatOrchestrator.execute",
+    "context": {
+        "trace_id": "77144145ac617c888fa61ece1e669a7b",
+        "span_id": "0d8083d18e3143aa",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "d9887142f3b027b2",
+    "start_time": "2026-09-02T03:27:38.475737Z",
+    "end_time": "2026-09-02T03:27:38.476532Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.7b1",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/agent_framework/_workflows/_edge_runner.py:81",
+        "workflow.name": "okahu_demos_ms_openai_groupchat_travel",
+        "entity.1.type": "agent.microsoft",
+        "entity.1.name": "group_chat_orchestrator",
+        "entity.1.description": "group_chat",
+        "entity.1.from_agent": "Reviewer",
+        "entity.1.from_agent_span_id": "bd071430c782898d",
+        "span.type": "agentic.invocation",
+        "scope.agentic.turn": "de63acb27ba4d06d10e7e4261acaad81",
+        "scope.agentic.invocation": "28ff8f7b31838fa4e87139c86b2b9b37",
+        "entity.count": 1,
+        "span.subtype": "routing"
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-09-02T03:27:38.476039Z",
+            "attributes": {}
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-09-02T03:27:38.476513Z",
+            "attributes": {}
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_groupchat_travel"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "agent_framework._workflows._workflow.Workflow.run",
+    "context": {
+        "trace_id": "77144145ac617c888fa61ece1e669a7b",
+        "span_id": "d9887142f3b027b2",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "6c5180ca8c747fe2",
+    "start_time": "2026-09-02T03:27:27.216526Z",
+    "end_time": "2026-09-02T03:27:38.527926Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.7b1",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/agents/orchestrations/group_chat_travel.py:111",
+        "workflow.name": "okahu_demos_ms_openai_groupchat_travel",
+        "entity.1.type": "agent.microsoft",
+        "last.inference": "",
+        "monocle.last.agent.invocation.id": "bd071430c782898d",
+        "monocle.last.agent.name": "Reviewer",
+        "span.type": "agentic.turn",
+        "scope.agentic.turn": "de63acb27ba4d06d10e7e4261acaad81",
+        "entity.count": 1,
+        "span.subtype": "turn"
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-09-02T03:27:27.216566Z",
+            "attributes": {
+                "input": "Plan a 3-day budget weekend in Barcelona for two friends, total budget under $1,200 including flights from London."
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-09-02T03:27:38.527905Z",
+            "attributes": {}
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_groupchat_travel"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "workflow",
+    "context": {
+        "trace_id": "77144145ac617c888fa61ece1e669a7b",
+        "span_id": "6c5180ca8c747fe2",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-09-02T03:27:27.216459Z",
+    "end_time": "2026-09-02T03:27:38.527964Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.7b1",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/agents/orchestrations/group_chat_travel.py:111",
+        "scope.agentic.turn": "de63acb27ba4d06d10e7e4261acaad81",
+        "workflow.name": "okahu_demos_ms_openai_groupchat_travel",
+        "span.type": "workflow",
+        "entity.1.name": "okahu_demos_ms_openai_groupchat_travel",
+        "entity.1.type": "workflow.generic",
+        "entity.2.type": "app_hosting.generic",
+        "entity.2.name": "generic"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_groupchat_travel"
+        },
+        "schema_url": ""
+    }
+}
+]

@@ -1,0 +1,426 @@
+[{
+    "name": "openai.resources.responses.AsyncResponses.create",
+    "context": {
+        "trace_id": "d5e441f0c3ca21e2fb6781986f6274f2",
+        "span_id": "788cd4ac91c22929",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "816cab9d95039f61",
+    "start_time": "2026-06-19T14:45:35.802869Z",
+    "end_time": "2026-06-19T14:45:40.108474Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.4",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/openai/_legacy_response.py:384",
+        "workflow.name": "okahu_demos_ms_openai_travel_agent",
+        "entity.1.type": "inference.openai",
+        "entity.1.provider_name": "api.tokenfactory.nebius.com",
+        "entity.1.inference_endpoint": "https://api.tokenfactory.nebius.com/v1/",
+        "entity.2.name": "Qwen/Qwen3.5-397B-A17B",
+        "entity.2.type": "model.llm.Qwen/Qwen3.5-397B-A17B",
+        "span.type": "inference",
+        "scope.agentic.turn": "66d1db6dc2d970a12648f45f06e4901b",
+        "scope.agentic.invocation": "9d45c1add5dc9092706bf83b25e89f88",
+        "entity.count": 2
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-06-19T14:45:35.803009Z",
+            "attributes": {
+                "input": [
+                    "{\"system\": [{\"type\": \"input_text\", \"text\": \"You are a helpful travel planning assistant. Use the available tools to find flights and hotels, then summarize the best options with a short itinerary.\"}]}",
+                    "{\"user\": [{\"type\": \"input_text\", \"text\": \"Plan a trip from New York to San Francisco, departing 2026-07-10 and returning 2026-07-14.\"}]}"
+                ]
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-06-19T14:45:40.108390Z",
+            "attributes": {}
+        },
+        {
+            "name": "metadata",
+            "timestamp": "2026-06-19T14:45:40.108429Z",
+            "attributes": {
+                "completion_tokens": 356,
+                "prompt_tokens": 538,
+                "total_tokens": 894
+            }
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_travel_agent"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "agent_framework._tools.FunctionTool.invoke",
+    "context": {
+        "trace_id": "d5e441f0c3ca21e2fb6781986f6274f2",
+        "span_id": "674735c3cd585d71",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "816cab9d95039f61",
+    "start_time": "2026-06-19T14:45:40.154809Z",
+    "end_time": "2026-06-19T14:45:40.155983Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.4",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/agent_framework/_tools.py:1541",
+        "workflow.name": "okahu_demos_ms_openai_travel_agent",
+        "entity.1.type": "tool.microsoft",
+        "entity.1.name": "search_flights",
+        "entity.1.description": "Search for flights between two cities on a given date.",
+        "entity.2.name": "TravelAgent",
+        "entity.2.type": "agent.microsoft",
+        "span.type": "agentic.tool.invocation",
+        "scope.agentic.turn": "66d1db6dc2d970a12648f45f06e4901b",
+        "scope.agentic.invocation": "9d45c1add5dc9092706bf83b25e89f88",
+        "entity.count": 2,
+        "span.subtype": "content_generation"
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-06-19T14:45:40.154899Z",
+            "attributes": {
+                "input": "{'origin': 'New York', 'destination': 'San Francisco', 'date': '2026-07-10'}"
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-06-19T14:45:40.155963Z",
+            "attributes": {
+                "response": "Found 3 flights from New York to San Francisco on 2026-07-10: Delta $320, United $290, JetBlue $275"
+            }
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_travel_agent"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "agent_framework._tools.FunctionTool.invoke",
+    "context": {
+        "trace_id": "d5e441f0c3ca21e2fb6781986f6274f2",
+        "span_id": "2a27ac24e0fbd8c8",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "816cab9d95039f61",
+    "start_time": "2026-06-19T14:45:40.155321Z",
+    "end_time": "2026-06-19T14:45:40.156057Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.4",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/agent_framework/_tools.py:1541",
+        "workflow.name": "okahu_demos_ms_openai_travel_agent",
+        "entity.1.type": "tool.microsoft",
+        "entity.1.name": "search_flights",
+        "entity.1.description": "Search for flights between two cities on a given date.",
+        "entity.2.name": "TravelAgent",
+        "entity.2.type": "agent.microsoft",
+        "span.type": "agentic.tool.invocation",
+        "scope.agentic.turn": "66d1db6dc2d970a12648f45f06e4901b",
+        "scope.agentic.invocation": "9d45c1add5dc9092706bf83b25e89f88",
+        "entity.count": 2,
+        "span.subtype": "content_generation"
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-06-19T14:45:40.155380Z",
+            "attributes": {
+                "input": "{'origin': 'San Francisco', 'destination': 'New York', 'date': '2026-07-14'}"
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-06-19T14:45:40.156048Z",
+            "attributes": {
+                "response": "Found 3 flights from San Francisco to New York on 2026-07-14: Delta $320, United $290, JetBlue $275"
+            }
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_travel_agent"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "agent_framework._tools.FunctionTool.invoke",
+    "context": {
+        "trace_id": "d5e441f0c3ca21e2fb6781986f6274f2",
+        "span_id": "ef9938279220913c",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "816cab9d95039f61",
+    "start_time": "2026-06-19T14:45:40.155685Z",
+    "end_time": "2026-06-19T14:45:40.156113Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.4",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/agent_framework/_tools.py:1541",
+        "workflow.name": "okahu_demos_ms_openai_travel_agent",
+        "entity.1.type": "tool.microsoft",
+        "entity.1.name": "search_hotels",
+        "entity.1.description": "Search for hotels in a city for given dates.",
+        "entity.2.name": "TravelAgent",
+        "entity.2.type": "agent.microsoft",
+        "span.type": "agentic.tool.invocation",
+        "scope.agentic.turn": "66d1db6dc2d970a12648f45f06e4901b",
+        "scope.agentic.invocation": "9d45c1add5dc9092706bf83b25e89f88",
+        "entity.count": 2,
+        "span.subtype": "content_generation"
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-06-19T14:45:40.155729Z",
+            "attributes": {
+                "input": "{'city': 'San Francisco', 'checkin': '2026-07-10', 'checkout': '2026-07-14'}"
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-06-19T14:45:40.156106Z",
+            "attributes": {
+                "response": "Found hotels in San Francisco (2026-07-10 to 2026-07-14): Marriott $180/night, Hilton $165/night, Airbnb $120/night"
+            }
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_travel_agent"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "openai.resources.responses.AsyncResponses.create",
+    "context": {
+        "trace_id": "d5e441f0c3ca21e2fb6781986f6274f2",
+        "span_id": "7188bfc5cfcd2ce3",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "816cab9d95039f61",
+    "start_time": "2026-06-19T14:45:40.156566Z",
+    "end_time": "2026-06-19T14:45:40.306576Z",
+    "status": {
+        "status_code": "ERROR",
+        "message": "Error code: 400 - {'detail': 'previous_response_id is not supported yet'}"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.4",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/openai/_legacy_response.py:384",
+        "workflow.name": "okahu_demos_ms_openai_travel_agent",
+        "entity.1.type": "inference.openai",
+        "entity.1.provider_name": "api.tokenfactory.nebius.com",
+        "entity.1.inference_endpoint": "https://api.tokenfactory.nebius.com/v1/",
+        "entity.2.name": "Qwen/Qwen3.5-397B-A17B",
+        "entity.2.type": "model.llm.Qwen/Qwen3.5-397B-A17B",
+        "span.type": "inference",
+        "scope.agentic.turn": "66d1db6dc2d970a12648f45f06e4901b",
+        "scope.agentic.invocation": "9d45c1add5dc9092706bf83b25e89f88",
+        "entity.count": 2
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-06-19T14:45:40.156667Z",
+            "attributes": {
+                "input": [
+                    "{\"call_id\": \"chatcmpl-tool-8707da57d50f9870\", \"output\": \"Found 3 flights from New York to San Francisco on 2026-07-10: Delta $320, United $290, JetBlue $275\"}",
+                    "{\"call_id\": \"chatcmpl-tool-87a4327a962ba9cd\", \"output\": \"Found 3 flights from San Francisco to New York on 2026-07-14: Delta $320, United $290, JetBlue $275\"}",
+                    "{\"call_id\": \"chatcmpl-tool-ba7047c926d08c39\", \"output\": \"Found hotels in San Francisco (2026-07-10 to 2026-07-14): Marriott $180/night, Hilton $165/night, Airbnb $120/night\"}"
+                ]
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-06-19T14:45:40.306547Z",
+            "attributes": {
+                "error_code": "error",
+                "response": "Error code: 400 - {'detail': 'previous_response_id is not supported yet'}"
+            }
+        },
+        {
+            "name": "metadata",
+            "timestamp": "2026-06-19T14:45:40.306559Z",
+            "attributes": {}
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_travel_agent"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "agent_framework._agents.Agent.run",
+    "context": {
+        "trace_id": "d5e441f0c3ca21e2fb6781986f6274f2",
+        "span_id": "816cab9d95039f61",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "30a7836fa581ae8d",
+    "start_time": "2026-06-19T14:45:35.795453Z",
+    "end_time": "2026-06-19T14:45:40.312675Z",
+    "status": {
+        "status_code": "ERROR",
+        "message": "(\"<class 'agent_framework_openai._chat_client.OpenAIChatClient'> service failed to complete the prompt: Error code: 400 - {'detail': 'previous_response_id is not supported yet'}\", BadRequestError(\"Error code: 400 - {'detail': 'previous_response_id is not supported yet'}\"))"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.4",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/agents/nimbus_travel_agent.py:65",
+        "workflow.name": "okahu_demos_ms_openai_travel_agent",
+        "entity.1.type": "agent.microsoft",
+        "entity.1.name": "TravelAgent",
+        "entity.1.description": "Qwen/Qwen3.5-397B-A17B",
+        "span.type": "agentic.invocation",
+        "scope.agentic.turn": "66d1db6dc2d970a12648f45f06e4901b",
+        "scope.agentic.invocation": "9d45c1add5dc9092706bf83b25e89f88",
+        "entity.count": 1,
+        "span.subtype": "content_processing"
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-06-19T14:45:35.795502Z",
+            "attributes": {
+                "input": "Plan a trip from New York to San Francisco, departing 2026-07-10 and returning 2026-07-14."
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-06-19T14:45:40.312654Z",
+            "attributes": {
+                "error_code": "error"
+            }
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_travel_agent"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "agent_framework._agents.Agent.run",
+    "context": {
+        "trace_id": "d5e441f0c3ca21e2fb6781986f6274f2",
+        "span_id": "30a7836fa581ae8d",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "e272d6eba0dcc0d8",
+    "start_time": "2026-06-19T14:45:35.795379Z",
+    "end_time": "2026-06-19T14:45:40.312717Z",
+    "status": {
+        "status_code": "ERROR",
+        "message": "(\"<class 'agent_framework_openai._chat_client.OpenAIChatClient'> service failed to complete the prompt: Error code: 400 - {'detail': 'previous_response_id is not supported yet'}\", BadRequestError(\"Error code: 400 - {'detail': 'previous_response_id is not supported yet'}\"))"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.4",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/agents/nimbus_travel_agent.py:65",
+        "workflow.name": "okahu_demos_ms_openai_travel_agent",
+        "entity.1.type": "agent.microsoft",
+        "span.type": "agentic.turn",
+        "scope.agentic.turn": "66d1db6dc2d970a12648f45f06e4901b",
+        "entity.count": 1,
+        "span.subtype": "turn"
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-06-19T14:45:35.795425Z",
+            "attributes": {
+                "input": "Plan a trip from New York to San Francisco, departing 2026-07-10 and returning 2026-07-14."
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-06-19T14:45:40.312705Z",
+            "attributes": {}
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_travel_agent"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "workflow",
+    "context": {
+        "trace_id": "d5e441f0c3ca21e2fb6781986f6274f2",
+        "span_id": "e272d6eba0dcc0d8",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-06-19T14:45:35.795305Z",
+    "end_time": "2026-06-19T14:45:40.312724Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.4",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/agents/nimbus_travel_agent.py:65",
+        "scope.agentic.turn": "66d1db6dc2d970a12648f45f06e4901b",
+        "workflow.name": "okahu_demos_ms_openai_travel_agent",
+        "span.type": "workflow",
+        "entity.1.name": "okahu_demos_ms_openai_travel_agent",
+        "entity.1.type": "workflow.generic",
+        "entity.2.type": "app_hosting.generic",
+        "entity.2.name": "generic"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_travel_agent"
+        },
+        "schema_url": ""
+    }
+}
+]

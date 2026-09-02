@@ -1,0 +1,52 @@
+((.venv) ) (base) welcome@jaisairams-Laptop microsfot_agent_framework % uv tree | grep -A 5 -B 5 "agent-framework"
+Resolving despite existing lockfile due to change in pre-release mode: `allow` vs. `if-necessary-or-explicit`
+Resolved 63 packages in 28ms
+microsfot-agent-framework v0.1.0
+├── agent-framework-azure-ai v1.0.0rc6
+│   ├── agent-framework-core v1.16.0
+│   │   ├── msgspec v0.21.1
+│   │   ├── opentelemetry-api v1.44.0
+│   │   │   └── typing-extensions v4.16.0
+│   │   ├── pydantic v2.14.0b1
+│   │   │   ├── annotated-types v0.8.0
+--
+│   │   │   ├── typing-extensions v4.16.0
+│   │   │   └── typing-inspection v0.4.4
+│   │   │       └── typing-extensions v4.16.0
+│   │   ├── python-dotenv v1.2.3
+│   │   └── typing-extensions v4.16.0
+│   ├── agent-framework-openai v1.14.1
+│   │   ├── agent-framework-core v1.16.0 (*)
+│   │   └── openai v2.54.0
+│   │       ├── anyio v4.14.2
+│   │       │   └── idna v3.19
+│   │       ├── distro v1.9.0
+│   │       ├── httpx v0.28.1
+--
+│   │   │   └── typing-extensions v4.16.0
+│   │   ├── isodate v0.7.2
+│   │   ├── openai v2.54.0 (*)
+│   │   └── typing-extensions v4.16.0
+│   └── azure-identity v1.26.0b2 (*)
+├── agent-framework-core v1.16.0 (*)
+├── agent-framework-orchestrations v1.1.1
+│   └── agent-framework-core v1.16.0 (*)
+├── monocle-apptrace v0.8.14
+│   ├── opentelemetry-api v1.44.0 (*)
+│   ├── opentelemetry-exporter-otlp-proto-http v1.44.0
+│   │   ├── googleapis-common-protos v1.75.2
+│   │   │   └── protobuf v7.36.1
+((.venv) ) (base) welcome@jaisairams-Laptop microsfot_agent_framework % uv tree | grep -A 5 -B 5 "monocle-apptrace"
+Resolved 63 packages in 37ms
+│   └── azure-identity v1.26.0b2 (*)
+├── agent-framework-core v1.16.0 (*)
+├── agent-framework-openai v1.14.1 (*)
+├── agent-framework-orchestrations v1.1.1
+│   └── agent-framework-core v1.16.0 (*)
+├── monocle-apptrace v0.8.14
+│   ├── opentelemetry-api v1.44.0 (*)
+│   ├── opentelemetry-exporter-otlp-proto-http v1.44.0
+│   │   ├── googleapis-common-protos v1.75.2
+│   │   │   └── protobuf v7.36.1
+│   │   ├── opentelemetry-api v1.44.0 (*)
+((.venv) ) (base) welcome@jaisairams-Laptop microsfot_agent_framework % 

@@ -1,0 +1,854 @@
+[{
+    "name": "openai.resources.responses.responses.AsyncResponses.create",
+    "context": {
+        "trace_id": "08171c22f84f8d7317adc609d426e913",
+        "span_id": "06a1cc787605b08a",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "01a1b58037628312",
+    "start_time": "2026-09-02T01:16:02.674359Z",
+    "end_time": "2026-09-02T01:16:05.608105Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.14",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/openai/_legacy_response.py:386",
+        "workflow.name": "okahu_demos_ms_openai_sequential_travel",
+        "entity.1.type": "inference.openai",
+        "entity.1.provider_name": "api.openai.com",
+        "entity.1.inference_endpoint": "https://api.openai.com/v1/",
+        "entity.2.name": "gpt-4o-mini",
+        "entity.2.type": "model.llm.gpt-4o-mini",
+        "span.type": "inference",
+        "scope.agentic.turn": "22359e77909828bef700e204768180c0",
+        "scope.agentic.invocation": "4153f7d256aaab45b91895682182f7a1",
+        "entity.count": 2
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-09-02T01:16:02.674609Z",
+            "attributes": {
+                "input": [
+                    "{\"system\": \"You are a destination researcher. Given a trip request, list the best season to visit, 3 must-see neighborhoods/areas, and any travel tips. Be brief and factual. Do not plan flights or hotels.\"}",
+                    "{\"user\": [{\"type\": \"input_text\", \"text\": \"Plan a 4-day trip from New York to San Francisco, departing 2026-07-10 and returning 2026-07-14, for two people.\"}]}"
+                ]
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-09-02T01:16:05.607764Z",
+            "attributes": {}
+        },
+        {
+            "name": "metadata",
+            "timestamp": "2026-09-02T01:16:05.607966Z",
+            "attributes": {
+                "completion_tokens": 180,
+                "prompt_tokens": 89,
+                "total_tokens": 269,
+                "cache_read_input_tokens": 0
+            }
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_sequential_travel"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "agent_framework._workflows._agent_executor.AgentExecutor.execute",
+    "context": {
+        "trace_id": "08171c22f84f8d7317adc609d426e913",
+        "span_id": "01a1b58037628312",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "a184e776e8d22d2b",
+    "start_time": "2026-09-02T01:16:02.650944Z",
+    "end_time": "2026-09-02T01:16:05.678203Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.14",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/agent_framework/_workflows/_edge_runner.py:81",
+        "workflow.name": "okahu_demos_ms_openai_sequential_travel",
+        "entity.1.type": "agent.microsoft",
+        "entity.1.name": "DestinationResearcher",
+        "entity.1.description": "unknown_model",
+        "span.type": "agentic.invocation",
+        "scope.agentic.turn": "22359e77909828bef700e204768180c0",
+        "scope.agentic.invocation": "4153f7d256aaab45b91895682182f7a1",
+        "entity.count": 1,
+        "span.subtype": "content_processing"
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-09-02T01:16:02.651204Z",
+            "attributes": {
+                "input": "WorkflowMessage(data=[<agent_framework._types.Message object at 0x10e2a7cb0>], source_id='input-conversation', target_id=None, type=<MessageType.STANDARD: 'standard'>, trace_contexts=[{'traceparent': '00-ff1f529f8ee313015ba6e0c08b77df63-d363577b279e67d2-03', 'baggage': 'monocle.scope.agentic.turn=0x22359e77909828bef700e204768180c0'}], source_span_ids=['d363577b279e67d2'], original_request_info_event=None)"
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-09-02T01:16:05.678174Z",
+            "attributes": {}
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_sequential_travel"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "openai.resources.responses.responses.AsyncResponses.create",
+    "context": {
+        "trace_id": "08171c22f84f8d7317adc609d426e913",
+        "span_id": "20984e676cd716ce",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "6f37bb795f182cc6",
+    "start_time": "2026-09-02T01:16:05.733966Z",
+    "end_time": "2026-09-02T01:16:07.652340Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.14",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/openai/_legacy_response.py:386",
+        "workflow.name": "okahu_demos_ms_openai_sequential_travel",
+        "entity.1.type": "inference.openai",
+        "entity.1.provider_name": "api.openai.com",
+        "entity.1.inference_endpoint": "https://api.openai.com/v1/",
+        "entity.2.name": "gpt-4o-mini",
+        "entity.2.type": "model.llm.gpt-4o-mini",
+        "span.type": "inference",
+        "scope.agentic.turn": "22359e77909828bef700e204768180c0",
+        "scope.agentic.invocation": "96c9a9765586e677478323ea0b79912b",
+        "entity.count": 2
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-09-02T01:16:05.734090Z",
+            "attributes": {
+                "input": [
+                    "{\"system\": \"You are a flight planner. Use the search_flights tool to find options, then recommend ONE outbound and ONE return flight with a one-line reason. Build on the researcher's notes but only handle flights.\"}",
+                    "{\"user\": [{\"type\": \"input_text\", \"text\": \"Plan a 4-day trip from New York to San Francisco, departing 2026-07-10 and returning 2026-07-14, for two people.\"}]}",
+                    "{\"assistant\": [{\"type\": \"output_text\", \"text\": \"### Best Season to Visit:\\n- **Best Season:** Late spring to early summer (May to June) for mild weather and fewer tourists.\\n\\n### Must-See Neighborhoods/Areas:\\n1. **Mission District:** Known for vibrant street art, trendy cafes, and authentic taquerias.\\n2. **Chinatown:** One of the oldest and largest Chinatowns in North America, great for cultural experiences and dining.\\n3. **Fisherman\\u2019s Wharf:** Famous for its seafood, waterfront views, and attractions like Pier 39 and sea lions.\\n\\n### Travel Tips:\\n- **Transportation:** Use public transport (Muni, BART) or rideshares; parking can be difficult.\\n- **Clothing:** Dress in layers; San Francisco\\u2019s weather can be unpredictable, especially with fog.\\n- **Local Events:** Check local calendars for events or festivals during your visit for a unique experience.\", \"annotations\": []}]}"
+                ]
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-09-02T01:16:07.652224Z",
+            "attributes": {}
+        },
+        {
+            "name": "metadata",
+            "timestamp": "2026-09-02T01:16:07.652317Z",
+            "attributes": {
+                "completion_tokens": 77,
+                "prompt_tokens": 327,
+                "total_tokens": 404,
+                "cache_read_input_tokens": 0
+            }
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_sequential_travel"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "agent_framework._tools.FunctionTool.invoke",
+    "context": {
+        "trace_id": "08171c22f84f8d7317adc609d426e913",
+        "span_id": "4b476806d61bd1b0",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "6f37bb795f182cc6",
+    "start_time": "2026-09-02T01:16:07.660991Z",
+    "end_time": "2026-09-02T01:16:07.661797Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.14",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/agent_framework/_tools.py:1559",
+        "workflow.name": "okahu_demos_ms_openai_sequential_travel",
+        "entity.1.type": "tool.microsoft",
+        "entity.1.name": "search_flights",
+        "entity.1.description": "Search for flights between two cities on a given date.",
+        "entity.2.name": "FlightPlanner",
+        "entity.2.type": "agent.microsoft",
+        "span.type": "agentic.tool.invocation",
+        "scope.agentic.turn": "22359e77909828bef700e204768180c0",
+        "scope.agentic.invocation": "96c9a9765586e677478323ea0b79912b",
+        "entity.count": 2,
+        "span.subtype": "content_generation"
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-09-02T01:16:07.661062Z",
+            "attributes": {
+                "input": "{'origin': 'New York', 'destination': 'San Francisco', 'date': '2026-07-10'}"
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-09-02T01:16:07.661781Z",
+            "attributes": {
+                "response": "Flights New York->San Francisco on 2026-07-10: Delta $320 (08:00), United $290 (11:30), JetBlue $275 (17:45)."
+            }
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_sequential_travel"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "agent_framework._tools.FunctionTool.invoke",
+    "context": {
+        "trace_id": "08171c22f84f8d7317adc609d426e913",
+        "span_id": "1ac712e269acc745",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "6f37bb795f182cc6",
+    "start_time": "2026-09-02T01:16:07.661444Z",
+    "end_time": "2026-09-02T01:16:07.661927Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.14",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/agent_framework/_tools.py:1559",
+        "workflow.name": "okahu_demos_ms_openai_sequential_travel",
+        "entity.1.type": "tool.microsoft",
+        "entity.1.name": "search_flights",
+        "entity.1.description": "Search for flights between two cities on a given date.",
+        "entity.2.name": "FlightPlanner",
+        "entity.2.type": "agent.microsoft",
+        "span.type": "agentic.tool.invocation",
+        "scope.agentic.turn": "22359e77909828bef700e204768180c0",
+        "scope.agentic.invocation": "96c9a9765586e677478323ea0b79912b",
+        "entity.count": 2,
+        "span.subtype": "content_generation"
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-09-02T01:16:07.661498Z",
+            "attributes": {
+                "input": "{'origin': 'San Francisco', 'destination': 'New York', 'date': '2026-07-14'}"
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-09-02T01:16:07.661917Z",
+            "attributes": {
+                "response": "Flights San Francisco->New York on 2026-07-14: Delta $320 (08:00), United $290 (11:30), JetBlue $275 (17:45)."
+            }
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_sequential_travel"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "openai.resources.responses.responses.AsyncResponses.create",
+    "context": {
+        "trace_id": "08171c22f84f8d7317adc609d426e913",
+        "span_id": "d59ce97d2a85650a",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "6f37bb795f182cc6",
+    "start_time": "2026-09-02T01:16:07.662461Z",
+    "end_time": "2026-09-02T01:16:09.591526Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.14",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/openai/_legacy_response.py:386",
+        "workflow.name": "okahu_demos_ms_openai_sequential_travel",
+        "entity.1.type": "inference.openai",
+        "entity.1.provider_name": "api.openai.com",
+        "entity.1.inference_endpoint": "https://api.openai.com/v1/",
+        "entity.2.name": "gpt-4o-mini",
+        "entity.2.type": "model.llm.gpt-4o-mini",
+        "span.type": "inference",
+        "scope.agentic.turn": "22359e77909828bef700e204768180c0",
+        "scope.agentic.invocation": "96c9a9765586e677478323ea0b79912b",
+        "entity.count": 2
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-09-02T01:16:07.662555Z",
+            "attributes": {
+                "input": [
+                    "{\"system\": \"You are a flight planner. Use the search_flights tool to find options, then recommend ONE outbound and ONE return flight with a one-line reason. Build on the researcher's notes but only handle flights.\"}",
+                    "{\"call_id\": \"call_5wXsL6TT93Bg6kxXA8caQVk7\", \"output\": \"Flights New York->San Francisco on 2026-07-10: Delta $320 (08:00), United $290 (11:30), JetBlue $275 (17:45).\"}",
+                    "{\"call_id\": \"call_K4P8HPwe6Yc1kN4OwyPnEo7d\", \"output\": \"Flights San Francisco->New York on 2026-07-14: Delta $320 (08:00), United $290 (11:30), JetBlue $275 (17:45).\"}"
+                ]
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-09-02T01:16:09.591429Z",
+            "attributes": {}
+        },
+        {
+            "name": "metadata",
+            "timestamp": "2026-09-02T01:16:09.591506Z",
+            "attributes": {
+                "completion_tokens": 97,
+                "prompt_tokens": 481,
+                "total_tokens": 578,
+                "cache_read_input_tokens": 0
+            }
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_sequential_travel"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "agent_framework._workflows._agent_executor.AgentExecutor.execute",
+    "context": {
+        "trace_id": "08171c22f84f8d7317adc609d426e913",
+        "span_id": "6f37bb795f182cc6",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "a184e776e8d22d2b",
+    "start_time": "2026-09-02T01:16:05.730024Z",
+    "end_time": "2026-09-02T01:16:09.592662Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.14",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/agent_framework/_workflows/_edge_runner.py:81",
+        "workflow.name": "okahu_demos_ms_openai_sequential_travel",
+        "entity.1.type": "agent.microsoft",
+        "entity.1.name": "FlightPlanner",
+        "entity.1.description": "unknown_model",
+        "entity.1.from_agent": "DestinationResearcher",
+        "entity.1.from_agent_span_id": "1a1b58037628312",
+        "span.type": "agentic.invocation",
+        "scope.agentic.turn": "22359e77909828bef700e204768180c0",
+        "scope.agentic.invocation": "96c9a9765586e677478323ea0b79912b",
+        "entity.count": 1,
+        "span.subtype": "content_processing"
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-09-02T01:16:05.730124Z",
+            "attributes": {
+                "input": "WorkflowMessage(data=AgentExecutorResponse(executor_id='DestinationResearcher', agent_response=<agent_framework._types.AgentResponse object at 0x10e3a02f0>, full_conversation=[<agent_framework._types.Message object at 0x10e2a7cb0>, <agent_framework._types.Message object at 0x10e34cb00>]), source_id='DestinationResearcher', target_id=None, type=<MessageType.STANDARD: 'standard'>, trace_contexts=[{'traceparent': '00-ff1f529f8ee313015ba6e0c08b77df63-72243b59382bf981-03', 'baggage': 'monocle.scope.agentic.turn=0x22359e77909828bef700e204768180c0,monocle.scope.agentic.invocation=0x4153f7d256aaab45b91895682182f7a1'}], source_span_ids=['72243b59382bf981'], original_request_info_event=None)"
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-09-02T01:16:09.592641Z",
+            "attributes": {}
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_sequential_travel"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "openai.resources.responses.responses.AsyncResponses.create",
+    "context": {
+        "trace_id": "08171c22f84f8d7317adc609d426e913",
+        "span_id": "9f50a9754dd905a8",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "e36705944b502564",
+    "start_time": "2026-09-02T01:16:09.646383Z",
+    "end_time": "2026-09-02T01:16:10.928373Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.14",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/openai/_legacy_response.py:386",
+        "workflow.name": "okahu_demos_ms_openai_sequential_travel",
+        "entity.1.type": "inference.openai",
+        "entity.1.provider_name": "api.openai.com",
+        "entity.1.inference_endpoint": "https://api.openai.com/v1/",
+        "entity.2.name": "gpt-4o-mini",
+        "entity.2.type": "model.llm.gpt-4o-mini",
+        "span.type": "inference",
+        "scope.agentic.turn": "22359e77909828bef700e204768180c0",
+        "scope.agentic.invocation": "44c60aa60bd56ae5eabcd1b6c0768e51",
+        "entity.count": 2
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-09-02T01:16:09.646517Z",
+            "attributes": {
+                "input": [
+                    "{\"system\": \"You are a hotel planner. Use the search_hotels tool, then recommend ONE hotel with a one-line reason. Consider the neighborhoods the researcher highlighted. Only handle lodging.\"}",
+                    "{\"user\": [{\"type\": \"input_text\", \"text\": \"Plan a 4-day trip from New York to San Francisco, departing 2026-07-10 and returning 2026-07-14, for two people.\"}]}",
+                    "{\"assistant\": [{\"type\": \"output_text\", \"text\": \"### Best Season to Visit:\\n- **Best Season:** Late spring to early summer (May to June) for mild weather and fewer tourists.\\n\\n### Must-See Neighborhoods/Areas:\\n1. **Mission District:** Known for vibrant street art, trendy cafes, and authentic taquerias.\\n2. **Chinatown:** One of the oldest and largest Chinatowns in North America, great for cultural experiences and dining.\\n3. **Fisherman\\u2019s Wharf:** Famous for its seafood, waterfront views, and attractions like Pier 39 and sea lions.\\n\\n### Travel Tips:\\n- **Transportation:** Use public transport (Muni, BART) or rideshares; parking can be difficult.\\n- **Clothing:** Dress in layers; San Francisco\\u2019s weather can be unpredictable, especially with fog.\\n- **Local Events:** Check local calendars for events or festivals during your visit for a unique experience.\", \"annotations\": []}]}",
+                    "{\"tool_function\": \"search_flights\", \"tool_arguments\": \"{\\\"origin\\\":\\\"New York\\\",\\\"destination\\\":\\\"San Francisco\\\",\\\"date\\\":\\\"2026-07-10\\\"}\", \"call_id\": \"call_5wXsL6TT93Bg6kxXA8caQVk7\"}",
+                    "{\"tool_function\": \"search_flights\", \"tool_arguments\": \"{\\\"origin\\\":\\\"San Francisco\\\",\\\"destination\\\":\\\"New York\\\",\\\"date\\\":\\\"2026-07-14\\\"}\", \"call_id\": \"call_K4P8HPwe6Yc1kN4OwyPnEo7d\"}",
+                    "{\"call_id\": \"call_5wXsL6TT93Bg6kxXA8caQVk7\", \"output\": \"Flights New York->San Francisco on 2026-07-10: Delta $320 (08:00), United $290 (11:30), JetBlue $275 (17:45).\"}",
+                    "{\"call_id\": \"call_K4P8HPwe6Yc1kN4OwyPnEo7d\", \"output\": \"Flights San Francisco->New York on 2026-07-14: Delta $320 (08:00), United $290 (11:30), JetBlue $275 (17:45).\"}",
+                    "{\"assistant\": [{\"type\": \"output_text\", \"text\": \"### Recommended Flights\\n\\n- **Outbound Flight (July 10, 2026):** JetBlue, $275, departing at 17:45. \\n  - *Reason: This flight is the most affordable option with a convenient evening departure.*\\n\\n- **Return Flight (July 14, 2026):** JetBlue, $275, departing at 17:45. \\n  - *Reason: Matching the outbound flight time allows for a consistent travel schedule.*\", \"annotations\": []}]}"
+                ]
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-09-02T01:16:10.928254Z",
+            "attributes": {}
+        },
+        {
+            "name": "metadata",
+            "timestamp": "2026-09-02T01:16:10.928348Z",
+            "attributes": {
+                "completion_tokens": 36,
+                "prompt_tokens": 576,
+                "total_tokens": 612,
+                "cache_read_input_tokens": 0
+            }
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_sequential_travel"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "agent_framework._tools.FunctionTool.invoke",
+    "context": {
+        "trace_id": "08171c22f84f8d7317adc609d426e913",
+        "span_id": "452b3f62b155e88d",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "e36705944b502564",
+    "start_time": "2026-09-02T01:16:10.929879Z",
+    "end_time": "2026-09-02T01:16:10.930309Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.14",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/agent_framework/_tools.py:1559",
+        "workflow.name": "okahu_demos_ms_openai_sequential_travel",
+        "entity.1.type": "tool.microsoft",
+        "entity.1.name": "search_hotels",
+        "entity.1.description": "Search for hotels in a city for the given date range.",
+        "entity.2.name": "HotelPlanner",
+        "entity.2.type": "agent.microsoft",
+        "span.type": "agentic.tool.invocation",
+        "scope.agentic.turn": "22359e77909828bef700e204768180c0",
+        "scope.agentic.invocation": "44c60aa60bd56ae5eabcd1b6c0768e51",
+        "entity.count": 2,
+        "span.subtype": "content_generation"
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-09-02T01:16:10.929951Z",
+            "attributes": {
+                "input": "{'city': 'San Francisco', 'checkin': '2026-07-10', 'checkout': '2026-07-14'}"
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-09-02T01:16:10.930292Z",
+            "attributes": {
+                "response": "Hotels in San Francisco (2026-07-10->2026-07-14): Marriott $180/night, Hilton $165/night, Airbnb loft $120/night."
+            }
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_sequential_travel"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "openai.resources.responses.responses.AsyncResponses.create",
+    "context": {
+        "trace_id": "08171c22f84f8d7317adc609d426e913",
+        "span_id": "63a8d4d5d18d60ff",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "e36705944b502564",
+    "start_time": "2026-09-02T01:16:10.930954Z",
+    "end_time": "2026-09-02T01:16:12.630058Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.14",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/openai/_legacy_response.py:386",
+        "workflow.name": "okahu_demos_ms_openai_sequential_travel",
+        "entity.1.type": "inference.openai",
+        "entity.1.provider_name": "api.openai.com",
+        "entity.1.inference_endpoint": "https://api.openai.com/v1/",
+        "entity.2.name": "gpt-4o-mini",
+        "entity.2.type": "model.llm.gpt-4o-mini",
+        "span.type": "inference",
+        "scope.agentic.turn": "22359e77909828bef700e204768180c0",
+        "scope.agentic.invocation": "44c60aa60bd56ae5eabcd1b6c0768e51",
+        "entity.count": 2
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-09-02T01:16:10.931060Z",
+            "attributes": {
+                "input": [
+                    "{\"system\": \"You are a hotel planner. Use the search_hotels tool, then recommend ONE hotel with a one-line reason. Consider the neighborhoods the researcher highlighted. Only handle lodging.\"}",
+                    "{\"call_id\": \"call_3K3K7eZGSGBlc5PMOFxqGBvF\", \"output\": \"Hotels in San Francisco (2026-07-10->2026-07-14): Marriott $180/night, Hilton $165/night, Airbnb loft $120/night.\"}"
+                ]
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-09-02T01:16:12.629974Z",
+            "attributes": {}
+        },
+        {
+            "name": "metadata",
+            "timestamp": "2026-09-02T01:16:12.630041Z",
+            "attributes": {
+                "completion_tokens": 93,
+                "prompt_tokens": 656,
+                "total_tokens": 749,
+                "cache_read_input_tokens": 0
+            }
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_sequential_travel"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "agent_framework._workflows._agent_executor.AgentExecutor.execute",
+    "context": {
+        "trace_id": "08171c22f84f8d7317adc609d426e913",
+        "span_id": "e36705944b502564",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "a184e776e8d22d2b",
+    "start_time": "2026-09-02T01:16:09.644444Z",
+    "end_time": "2026-09-02T01:16:12.630996Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.14",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/agent_framework/_workflows/_edge_runner.py:81",
+        "workflow.name": "okahu_demos_ms_openai_sequential_travel",
+        "entity.1.type": "agent.microsoft",
+        "entity.1.name": "HotelPlanner",
+        "entity.1.description": "unknown_model",
+        "entity.1.from_agent": "FlightPlanner",
+        "entity.1.from_agent_span_id": "6f37bb795f182cc6",
+        "span.type": "agentic.invocation",
+        "scope.agentic.turn": "22359e77909828bef700e204768180c0",
+        "scope.agentic.invocation": "44c60aa60bd56ae5eabcd1b6c0768e51",
+        "entity.count": 1,
+        "span.subtype": "content_processing"
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-09-02T01:16:09.644544Z",
+            "attributes": {
+                "input": "WorkflowMessage(data=AgentExecutorResponse(executor_id='FlightPlanner', agent_response=<agent_framework._types.AgentResponse object at 0x10e34e9e0>, full_conversation=[<agent_framework._types.Message object at 0x10e2a7cb0>, <agent_framework._types.Message object at 0x10e34cb00>, <agent_framework._types.Message object at 0x10e2b3050>, <agent_framework._types.Message object at 0x10e28f200>, <agent_framework._types.Message object at 0x10e28fc50>]), source_id='FlightPlanner', target_id=None, type=<MessageType.STANDARD: 'standard'>, trace_contexts=[{'traceparent': '00-ff1f529f8ee313015ba6e0c08b77df63-21f996e438fb7722-03', 'baggage': 'monocle.scope.agentic.turn=0x22359e77909828bef700e204768180c0,monocle.scope.agentic.invocation=0x96c9a9765586e677478323ea0b79912b'}], source_span_ids=['21f996e438fb7722'], original_request_info_event=None)"
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-09-02T01:16:12.630979Z",
+            "attributes": {}
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_sequential_travel"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "openai.resources.responses.responses.AsyncResponses.create",
+    "context": {
+        "trace_id": "08171c22f84f8d7317adc609d426e913",
+        "span_id": "1d1eb6c1a85778ae",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "f88b9ad6dc943e24",
+    "start_time": "2026-09-02T01:16:12.697308Z",
+    "end_time": "2026-09-02T01:16:19.650566Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.14",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/openai/_legacy_response.py:386",
+        "workflow.name": "okahu_demos_ms_openai_sequential_travel",
+        "entity.1.type": "inference.openai",
+        "entity.1.provider_name": "api.openai.com",
+        "entity.1.inference_endpoint": "https://api.openai.com/v1/",
+        "entity.2.name": "gpt-4o-mini",
+        "entity.2.type": "model.llm.gpt-4o-mini",
+        "span.type": "inference",
+        "scope.agentic.turn": "22359e77909828bef700e204768180c0",
+        "scope.agentic.invocation": "801e162d918b6229ce0fcdea88b3fb6d",
+        "entity.count": 2
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-09-02T01:16:12.698142Z",
+            "attributes": {
+                "input": [
+                    "{\"system\": \"You are an itinerary writer. Using everything discussed so far, produce a clean day-by-day itinerary that includes the chosen flights, hotel, and activities. End with an estimated total budget.\"}",
+                    "{\"user\": [{\"type\": \"input_text\", \"text\": \"Plan a 4-day trip from New York to San Francisco, departing 2026-07-10 and returning 2026-07-14, for two people.\"}]}",
+                    "{\"assistant\": [{\"type\": \"output_text\", \"text\": \"### Best Season to Visit:\\n- **Best Season:** Late spring to early summer (May to June) for mild weather and fewer tourists.\\n\\n### Must-See Neighborhoods/Areas:\\n1. **Mission District:** Known for vibrant street art, trendy cafes, and authentic taquerias.\\n2. **Chinatown:** One of the oldest and largest Chinatowns in North America, great for cultural experiences and dining.\\n3. **Fisherman\\u2019s Wharf:** Famous for its seafood, waterfront views, and attractions like Pier 39 and sea lions.\\n\\n### Travel Tips:\\n- **Transportation:** Use public transport (Muni, BART) or rideshares; parking can be difficult.\\n- **Clothing:** Dress in layers; San Francisco\\u2019s weather can be unpredictable, especially with fog.\\n- **Local Events:** Check local calendars for events or festivals during your visit for a unique experience.\", \"annotations\": []}]}",
+                    "{\"tool_function\": \"search_flights\", \"tool_arguments\": \"{\\\"origin\\\":\\\"New York\\\",\\\"destination\\\":\\\"San Francisco\\\",\\\"date\\\":\\\"2026-07-10\\\"}\", \"call_id\": \"call_5wXsL6TT93Bg6kxXA8caQVk7\"}",
+                    "{\"tool_function\": \"search_flights\", \"tool_arguments\": \"{\\\"origin\\\":\\\"San Francisco\\\",\\\"destination\\\":\\\"New York\\\",\\\"date\\\":\\\"2026-07-14\\\"}\", \"call_id\": \"call_K4P8HPwe6Yc1kN4OwyPnEo7d\"}",
+                    "{\"call_id\": \"call_5wXsL6TT93Bg6kxXA8caQVk7\", \"output\": \"Flights New York->San Francisco on 2026-07-10: Delta $320 (08:00), United $290 (11:30), JetBlue $275 (17:45).\"}",
+                    "{\"call_id\": \"call_K4P8HPwe6Yc1kN4OwyPnEo7d\", \"output\": \"Flights San Francisco->New York on 2026-07-14: Delta $320 (08:00), United $290 (11:30), JetBlue $275 (17:45).\"}",
+                    "{\"assistant\": [{\"type\": \"output_text\", \"text\": \"### Recommended Flights\\n\\n- **Outbound Flight (July 10, 2026):** JetBlue, $275, departing at 17:45. \\n  - *Reason: This flight is the most affordable option with a convenient evening departure.*\\n\\n- **Return Flight (July 14, 2026):** JetBlue, $275, departing at 17:45. \\n  - *Reason: Matching the outbound flight time allows for a consistent travel schedule.*\", \"annotations\": []}]}",
+                    "{\"tool_function\": \"search_hotels\", \"tool_arguments\": \"{\\\"city\\\":\\\"San Francisco\\\",\\\"checkin\\\":\\\"2026-07-10\\\",\\\"checkout\\\":\\\"2026-07-14\\\"}\", \"call_id\": \"call_3K3K7eZGSGBlc5PMOFxqGBvF\"}",
+                    "{\"call_id\": \"call_3K3K7eZGSGBlc5PMOFxqGBvF\", \"output\": \"Hotels in San Francisco (2026-07-10->2026-07-14): Marriott $180/night, Hilton $165/night, Airbnb loft $120/night.\"}",
+                    "{\"assistant\": [{\"type\": \"output_text\", \"text\": \"### Recommended Hotel\\n\\n- **Hilton San Francisco:** $165/night.\\n  - *Reason: Centrally located with great amenities, making it easy to explore nearby neighborhoods like Chinatown and Fisherman's Wharf.* \\n\\n### Summary of Your Trip:\\n- **Flights:** JetBlue round-trip for $550 total.\\n- **Hotel:** Hilton San Francisco for $660 total (4 nights).\\n- **Total Trip Cost:** Approximately $1,210 for two guests.\", \"annotations\": []}]}"
+                ]
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-09-02T01:16:19.650351Z",
+            "attributes": {}
+        },
+        {
+            "name": "metadata",
+            "timestamp": "2026-09-02T01:16:19.650485Z",
+            "attributes": {
+                "completion_tokens": 598,
+                "prompt_tokens": 694,
+                "total_tokens": 1292,
+                "cache_read_input_tokens": 0
+            }
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_sequential_travel"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "agent_framework._workflows._agent_executor.AgentExecutor.execute",
+    "context": {
+        "trace_id": "08171c22f84f8d7317adc609d426e913",
+        "span_id": "f88b9ad6dc943e24",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "a184e776e8d22d2b",
+    "start_time": "2026-09-02T01:16:12.693962Z",
+    "end_time": "2026-09-02T01:16:19.661423Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.14",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/.venv/lib/python3.13/site-packages/agent_framework/_workflows/_edge_runner.py:81",
+        "workflow.name": "okahu_demos_ms_openai_sequential_travel",
+        "entity.1.type": "agent.microsoft",
+        "entity.1.name": "ItineraryWriter",
+        "entity.1.description": "unknown_model",
+        "entity.1.from_agent": "HotelPlanner",
+        "entity.1.from_agent_span_id": "e36705944b502564",
+        "span.type": "agentic.invocation",
+        "scope.agentic.turn": "22359e77909828bef700e204768180c0",
+        "scope.agentic.invocation": "801e162d918b6229ce0fcdea88b3fb6d",
+        "entity.count": 1,
+        "span.subtype": "content_processing"
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-09-02T01:16:12.694074Z",
+            "attributes": {
+                "input": "WorkflowMessage(data=AgentExecutorResponse(executor_id='HotelPlanner', agent_response=<agent_framework._types.AgentResponse object at 0x10e283f00>, full_conversation=[<agent_framework._types.Message object at 0x10e2a7cb0>, <agent_framework._types.Message object at 0x10e34cb00>, <agent_framework._types.Message object at 0x10e2b3050>, <agent_framework._types.Message object at 0x10e28f200>, <agent_framework._types.Message object at 0x10e28fc50>, <agent_framework._types.Message object at 0x1138e68d0>, <agent_framework._types.Message object at 0x1138e52d0>, <agent_framework._types.Message object at 0x1138de950>]), source_id='HotelPlanner', target_id=None, type=<MessageType.STANDARD: 'standard'>, trace_contexts=[{'traceparent': '00-ff1f529f8ee313015ba6e0c08b77df63-899da15d8f15727c-03', 'baggage': 'monocle.scope.agentic.turn=0x22359e77909828bef700e204768180c0,monocle.scope.agentic.invocation=0x44c60aa60bd56ae5eabcd1b6c0768e51'}], source_span_ids=['899da15d8f15727c'], original_request_info_event=None)"
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-09-02T01:16:19.661368Z",
+            "attributes": {}
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_sequential_travel"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "agent_framework._workflows._workflow.Workflow.run",
+    "context": {
+        "trace_id": "08171c22f84f8d7317adc609d426e913",
+        "span_id": "a184e776e8d22d2b",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "e8ab80d0851328ab",
+    "start_time": "2026-09-02T01:16:02.594142Z",
+    "end_time": "2026-09-02T01:16:19.772700Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.14",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/agents/orchestrations/sequential_travel.py:125",
+        "workflow.name": "okahu_demos_ms_openai_sequential_travel",
+        "entity.1.type": "agent.microsoft",
+        "monocle.last.agent.invocation.id": "f88b9ad6dc943e24",
+        "monocle.last.agent.name": "ItineraryWriter",
+        "span.type": "agentic.turn",
+        "scope.agentic.turn": "22359e77909828bef700e204768180c0",
+        "entity.count": 1,
+        "span.subtype": "turn"
+    },
+    "events": [
+        {
+            "name": "data.input",
+            "timestamp": "2026-09-02T01:16:02.594181Z",
+            "attributes": {
+                "input": "Plan a 4-day trip from New York to San Francisco, departing 2026-07-10 and returning 2026-07-14, for two people."
+            }
+        },
+        {
+            "name": "data.output",
+            "timestamp": "2026-09-02T01:16:19.772473Z",
+            "attributes": {}
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_sequential_travel"
+        },
+        "schema_url": ""
+    }
+}
+,{
+    "name": "workflow",
+    "context": {
+        "trace_id": "08171c22f84f8d7317adc609d426e913",
+        "span_id": "e8ab80d0851328ab",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-09-02T01:16:02.594076Z",
+    "end_time": "2026-09-02T01:16:19.774785Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "monocle_apptrace.version": "0.8.14",
+        "monocle_apptrace.language": "python",
+        "span_source": "/Users/welcome/Desktop/sai_welcome_hanuman/microsfot_agent_framework/agents/orchestrations/sequential_travel.py:125",
+        "scope.agentic.turn": "22359e77909828bef700e204768180c0",
+        "workflow.name": "okahu_demos_ms_openai_sequential_travel",
+        "span.type": "workflow",
+        "entity.1.name": "okahu_demos_ms_openai_sequential_travel",
+        "entity.1.type": "workflow.generic",
+        "entity.2.type": "app_hosting.generic",
+        "entity.2.name": "generic"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "okahu_demos_ms_openai_sequential_travel"
+        },
+        "schema_url": ""
+    }
+}
+]
